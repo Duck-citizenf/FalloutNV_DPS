@@ -97,7 +97,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".357 magnum round",
+      "class": ".357 Magnum",
       "Name": "standard",
       "Dam": "x 1",
       "DT": "x 1",
@@ -108,7 +108,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".357 magnum round",
+      "class": ".357 Magnum",
       "Name": ".38 special round",
       "Dam": "x 0.75",
       "DT": "x 1",
@@ -119,7 +119,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".357 magnum round",
+      "class": ".357 Magnum",
       "Name": "JFP (hand load)",
       "Dam": "x 1.25",
       "DT": "-3",
@@ -130,7 +130,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".357 magnum round",
+      "class": ".357 Magnum",
       "Name": "hollow point",
       "Dam": "x 1.75",
       "DT": "x 3",
