@@ -1,21 +1,32 @@
 function calc(){
-    for (const gun of window.list){
-        let line;
-        let colspan = 0;
-        for (const bullet of window.ammo){
-            colspan++;
-            console.log(colspan);
-            if(gun.Ammo == bullet.class){
-                line = document.createElement("tr");
+    let enemyDT = 1;
+    let enemyDR = 1;
+    let playerLuck = 1;
+    let playerStr = 1;
+    let playerSkill = 100;
+    for (const gun of window.list){ 
+        for (const bullet of window.ammo){  
+            if(gun.ammo.trim() == bullet.class){
+                let line = document.createElement("tr");
                 document.getElementById('table').appendChild(line);
+                line.appendChild(document.createElement("td")).textContent = gun.Name;
                 line.appendChild(document.createElement("td")).textContent = bullet.Name;
-                line.appendChild(document.createElement("td")).textContent = gun.Damage;
+                let Dam = gun.Damage*(playerSkill/100)+(((playerLuck)/100)*gun.Critical*Number(gun.CritDam))*enemyDR;
+                let DT = enemyDT
+                line.appendChild(document.createElement("td")).textContent = Dam;
             }
         }
-        let name = document.createElement("td");
-        name.textContent = gun.Name;
-        name.colSpan = colspan;
-        line.prepend(name)
+        if(gun.ammo.trim() == ""){
+            let line = document.createElement("tr");
+            document.getElementById('table').appendChild(line);
+            line.appendChild(document.createElement("td")).textContent = gun.Name;
+            line.appendChild(document.createElement("td"));
+            line.appendChild(document.createElement("td")).textContent = gun.Damage;
+        }
+        // let name = document.createElement("td");
+        // name.textContent = gun.Name;
+        // name.colSpan = colspan;
+        // line.prepend(name)
     }
 }
 calc();
