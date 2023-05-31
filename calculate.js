@@ -108,8 +108,8 @@ function calc(){
                 let DT = Math.max(pDT, 0);
                 let Dam_adjusted = Math.max(Dam*0.2,Dam-DT);
                 let fin_dam = Dam_adjusted*bullet.Dam
-                line.appendChild(document.createElement("td")).textContent = fin_dam;
-                line.appendChild(document.createElement("td")).textContent = auth_dam;
+                line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
+                // line.appendChild(document.createElement("td")).textContent = auth_dam;
             }
         }
         if(gun.ammo.trim() == ""){
