@@ -32,7 +32,6 @@ function calc(){
     let LightTouch = document.getElementById("Light Touch").checked;
     let ElijahsRambl = document.getElementById("Elijah's Ramblings").checked; //melee
     let FightthePower = document.getElementById("Fight the Power!").checked; //NCR legion
-    let EyeforEye = document.getElementById("Eye for Eye").checked;
     let Atomic = document.getElementById("Atomic!").checked; //non-automatic
     let CertifiedTech = document.getElementById("Certified Tech").checked; //robots
     let AintLikeThatNow = document.getElementById("Ain't Like That Now").checked; //non-automatic
@@ -48,7 +47,7 @@ function calc(){
     let LooseCannon = document.getElementById("Loose Cannon").checked; //Throwing
     let HeavyHanded = document.getElementById("Heavy Handed").checked; //Melee unarmed
     let Daturana = document.getElementById("Daturana").checked; //Unarmed
-    let Rushingwater = document.getElementById("Rushing water").checked;
+    let Rushingwater = document.getElementById("Rushing water").checked;  //Non-automatic
     let Weaponbindingritual = document.getElementById("Weapon binding ritual").checked; //unarmed melee
     let TruePoliceStories = document.getElementById("True Police Stories").checked;
     let Comprehension = document.getElementById("Comprehension").checked;
