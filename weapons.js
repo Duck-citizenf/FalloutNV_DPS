@@ -7,7 +7,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "26",
       "AP cost": 26,
-      "ammo": ".357 Magnum round "
+      "ammo": ".357 Magnum round ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " .44 Magnum revolver ",
@@ -17,7 +18,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "36",
       "AP cost": 25,
-      "ammo": ".44 Magnum round "
+      "ammo": ".44 Magnum round ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " .45 Auto pistol ",
@@ -27,7 +29,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "29",
       "AP cost": 17,
-      "ammo": ".45 Auto "
+      "ammo": ".45 Auto ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " 10mm pistol ",
@@ -37,7 +40,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "22",
       "AP cost": 17,
-      "ammo": "10mm round "
+      "ammo": "10mm round ",
+      "Type": "Professional"
     },
     {
       "Name": " 12.7mm pistol ",
@@ -47,7 +51,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "40",
       "AP cost": 17,
-      "ammo": "12.7mm round "
+      "ammo": "12.7mm round ",
+      "Type": "Professional"
     },
     {
       "Name": " 5.56mm pistol ",
@@ -57,7 +62,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "28",
       "AP cost": 21,
-      "ammo": "5.56mm round "
+      "ammo": "5.56mm round ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " 9mm pistol ",
@@ -67,7 +73,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "16",
       "AP cost": 17,
-      "ammo": "9mm round "
+      "ammo": "9mm round ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " A Light Shining in Darkness ",
@@ -77,7 +84,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "33",
       "AP cost": 15,
-      "ammo": ".45 Auto "
+      "ammo": ".45 Auto ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " Hunting revolver ",
@@ -87,7 +95,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "58",
       "AP cost": 31,
-      "ammo": ".45-70 Gov't "
+      "ammo": ".45-70 Gov't ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " Li'l Devil ",
@@ -97,7 +106,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "45",
       "AP cost": 15,
-      "ammo": "12.7mm round "
+      "ammo": "12.7mm round ",
+      "Type": "Professional"
     },
     {
       "Name": " Lucky ",
@@ -107,7 +117,8 @@ window.list = [
       "Critical": 2.5,
       "CritDam": "30",
       "AP cost": 17,
-      "ammo": ".357 Magnum round "
+      "ammo": ".357 Magnum round ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " Maria ",
@@ -117,7 +128,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "20",
       "AP cost": 15,
-      "ammo": "9mm round "
+      "ammo": "9mm round ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " Mysterious Magnum ",
@@ -127,7 +139,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "42",
       "AP cost": 22,
-      "ammo": ".44 Magnum round "
+      "ammo": ".44 Magnum round ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " Police pistol ",
@@ -147,7 +160,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "62",
       "AP cost": 30,
-      "ammo": ".45-70 Gov't "
+      "ammo": ".45-70 Gov't ",
+      "Type": "Cowboy, Professional"
     },
     {
       "Name": " Silenced .22 pistol ",
@@ -157,7 +171,8 @@ window.list = [
       "Critical": 3,
       "CritDam": "18",
       "AP cost": 17,
-      "ammo": ".22LR round "
+      "ammo": ".22LR round ",
+      "Type": "Professional"
     },
     {
       "Name": " That Gun ",
@@ -167,7 +182,8 @@ window.list = [
       "Critical": 2.5,
       "CritDam": "30",
       "AP cost": 19,
-      "ammo": "5.56mm round "
+      "ammo": "5.56mm round ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Weathered 10mm pistol ",
@@ -187,7 +203,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "70",
       "AP cost": 28,
-      "ammo": "BB "
+      "ammo": "BB ",
+      "Type": "Cowboy"
     },
     {
       "Name": " All-American ",
@@ -197,7 +214,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "26",
       "AP cost": 13,
-      "ammo": "5.56mm round "
+      "ammo": "5.56mm round ",
+      "Type": "Grunt"
     },
     {
       "Name": " Anti-Materiel Rifle ",
@@ -217,7 +235,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "13",
       "AP cost": 20,
-      "ammo": "5mm round "
+      "ammo": "5mm round ",
+      "Type": "Grunt"
     },
     {
       "Name": " Automatic rifle ",
@@ -237,7 +256,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "4",
       "AP cost": 28,
-      "ammo": "BB "
+      "ammo": "BB ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Battle rifle ",
@@ -267,7 +287,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "75",
       "AP cost": 33,
-      "ammo": ".45-70 Gov't "
+      "ammo": ".45-70 Gov't ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Christine's CoS silencer rifle ",
@@ -287,7 +308,8 @@ window.list = [
       "Critical": 1.25,
       "CritDam": "32",
       "AP cost": 27,
-      "ammo": ".357 Magnum round "
+      "ammo": ".357 Magnum round ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Gobi Campaign scout rifle ",
@@ -317,7 +339,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "35",
       "AP cost": 24,
-      "ammo": ".357 Magnum round "
+      "ammo": ".357 Magnum round ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Light machine gun ",
@@ -327,7 +350,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "21",
       "AP cost": 18,
-      "ammo": "5.56mm round "
+      "ammo": "5.56mm round ",
+      "Type": "Grunt"
     },
     {
       "Name": " Marksman carbine ",
@@ -337,7 +361,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "24",
       "AP cost": 14,
-      "ammo": "5.56mm round "
+      "ammo": "5.56mm round ",
+      "Type": "Grunt"
     },
     {
       "Name": " Medicine Stick ",
@@ -347,7 +372,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "78",
       "AP cost": 31,
-      "ammo": ".45-70 Gov't "
+      "ammo": ".45-70 Gov't ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Paciencia ",
@@ -377,7 +403,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "18",
       "AP cost": 15,
-      "ammo": "5.56mm round "
+      "ammo": "5.56mm round ",
+      "Type": "Grunt"
     },
     {
       "Name": " Sniper rifle ",
@@ -397,7 +424,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "48",
       "AP cost": 20,
-      "ammo": "12.7mm round "
+      "ammo": "12.7mm round ",
+      "Type": "Grunt"
     },
     {
       "Name": " This Machine ",
@@ -417,7 +445,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "48",
       "AP cost": 29,
-      "ammo": ".44 Magnum round "
+      "ammo": ".44 Magnum round ",
+      "Type": "Cowboy"
     },
     {
       "Name": " Varmint Rifle ",
@@ -437,7 +466,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "26",
       "AP cost": 19,
-      "ammo": ".45 Auto "
+      "ammo": ".45 Auto ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " 10mm submachine gun ",
@@ -447,7 +477,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "19",
       "AP cost": 22,
-      "ammo": "10mm round "
+      "ammo": "10mm round ",
+      "Type": "Professional"
     },
     {
       "Name": " 12.7mm submachine gun ",
@@ -457,17 +488,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "36",
       "AP cost": 24,
-      "ammo": "12.7mm round "
-    },
-    {
-      "Name": " 12.7mm submachine gun ",
-      "Damage": 36,
-      "Attack speed": 9,
-      "proj": 1,
-      "Critical": 1,
-      "CritDam": "36",
-      "AP cost": 24,
-      "ammo": "12.7mm round "
+      "ammo": "12.7mm round ",
+      "Type": "Professional"
     },
     {
       "Name": " 9mm submachine gun ",
@@ -477,7 +499,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "14",
       "AP cost": 20,
-      "ammo": "9mm round "
+      "ammo": "9mm round ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " H&H Tools nail gun ",
@@ -487,7 +510,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "9",
       "AP cost": 20,
-      "ammo": "Nails "
+      "ammo": "Nails ",
+      "Type": "Professional"
     },
     {
       "Name": " Silenced .22 SMG ",
@@ -497,7 +521,8 @@ window.list = [
       "Critical": 3,
       "CritDam": "20",
       "AP cost": 19,
-      "ammo": ".22LR round "
+      "ammo": ".22LR round ",
+      "Type": "Professional"
     },
     {
       "Name": " Sleepytyme ",
@@ -507,7 +532,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "22",
       "AP cost": 22,
-      "ammo": "10mm round "
+      "ammo": "10mm round ",
+      "Type": "Professional"
     },
     {
       "Name": " Vance's 9mm submachine gun ",
@@ -517,7 +543,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "17",
       "AP cost": 20,
-      "ammo": "9mm round "
+      "ammo": "9mm round ",
+      "Type": "Grunt, Professional"
     },
     {
       "Name": " Big Boomer ",
@@ -527,7 +554,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "9",
       "AP cost": 35,
-      "ammo": "12 gauge shotgun shell "
+      "ammo": "12 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Caravan shotgun ",
@@ -537,7 +565,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "6",
       "AP cost": 20,
-      "ammo": "20 gauge shotgun shell "
+      "ammo": "20 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Dinner Bell ",
@@ -547,7 +576,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "11",
       "AP cost": 28,
-      "ammo": "12 gauge shotgun shell "
+      "ammo": "12 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Hunting shotgun ",
@@ -557,7 +587,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "10",
       "AP cost": 28,
-      "ammo": "12 gauge shotgun shell "
+      "ammo": "12 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Lever-action shotgun ",
@@ -567,7 +598,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "7",
       "AP cost": 25,
-      "ammo": "20 gauge shotgun shell "
+      "ammo": "20 gauge shotgun shell ",
+      "Type": "Cowboy, Shotgun"
     },
     {
       "Name": " Riot shotgun ",
@@ -577,7 +609,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "10",
       "AP cost": 17,
-      "ammo": "12 gauge shotgun shell "
+      "ammo": "12 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Sawed-off shotgun ",
@@ -587,7 +620,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "7",
       "AP cost": 37,
-      "ammo": "12 gauge shotgun shell "
+      "ammo": "12 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Single shotgun ",
@@ -597,7 +631,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "7",
       "AP cost": 45,
-      "ammo": "20 gauge shotgun shell "
+      "ammo": "20 gauge shotgun shell ",
+      "Type": "Shotgun"
     },
     {
       "Name": " Sturdy caravan shotgun ",
@@ -617,7 +652,8 @@ window.list = [
       "Critical": 4,
       "CritDam": "1",
       "AP cost": 30,
-      "ammo": "Electron charge pack "
+      "ammo": "Electron charge pack ",
+      "Type": "Laser"
     },
     {
       "Name": " CZ57 Avenger ",
@@ -677,7 +713,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "10",
       "AP cost": 30,
-      "ammo": "Electron charge pack "
+      "ammo": "Electron charge pack ",
+      "Type": "Laser"
     },
     {
       "Name": " Heavy incinerator ",
@@ -747,7 +784,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "16",
       "AP cost": 30,
-      "ammo": "Electron charge pack "
+      "ammo": "Electron charge pack ",
+      "Type": "Laser"
     },
     {
       "Name": " Tesla Cannon ",
@@ -787,7 +825,8 @@ window.list = [
       "Critical": 100,
       "CritDam": "50",
       "AP cost": 20,
-      "ammo": "Alien power cell "
+      "ammo": "Alien power cell ",
+      "Type": "Professional"
     },
     {
       "Name": " Compliance Regulator ",
@@ -797,7 +836,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "12",
       "AP cost": 15,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Euclid's C-Finder ",
@@ -827,7 +867,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "12",
       "AP cost": 15,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional",
     },
     {
       "Name": " MF Hyperbreeder Alpha ",
@@ -837,7 +878,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "25",
       "AP cost": 20,
-      "ammo": "Microfusion breeder "
+      "ammo": "Microfusion breeder ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Missing laser pistol ",
@@ -847,7 +889,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "11",
       "AP cost": 15,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Pew Pew ",
@@ -857,7 +900,8 @@ window.list = [
       "Critical": 2.5,
       "CritDam": "50",
       "AP cost": 35,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Pulse gun ",
@@ -867,7 +911,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "5",
       "AP cost": 20,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Recharger pistol ",
@@ -877,7 +922,8 @@ window.list = [
       "Critical": 1.2,
       "CritDam": "18",
       "AP cost": 13,
-      "ammo": "Microfusion breeder "
+      "ammo": "Microfusion breeder ",
+      "Type": "Professional"
     },
     {
       "Name": " Sonic Emitter - Gabriel's Bark ",
@@ -887,7 +933,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "25",
       "AP cost": 30,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Sonic Emitter - Opera Singer ",
@@ -897,7 +944,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "25",
       "AP cost": 30,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Sonic Emitter - Revelation ",
@@ -907,7 +955,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "18",
       "AP cost": 30,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Sonic Emitter - Robo-Scorpion ",
@@ -917,7 +966,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "30 + 100 ",
       "AP cost": 30,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Sonic Emitter - Tarantula ",
@@ -927,7 +977,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "30",
       "AP cost": 30,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " AER14 prototype ",
@@ -937,7 +988,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "35",
       "AP cost": 20,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Elijah's advanced LAER ",
@@ -947,7 +999,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "15",
       "AP cost": 32,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Elijah's advanced LAER split",
@@ -957,7 +1010,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "15",
       "AP cost": 32,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Gauss Rifle ",
@@ -987,7 +1041,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "15",
       "AP cost": 32,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " LAER split",
@@ -997,7 +1052,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "15",
       "AP cost": 32,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Laser RCW ",
@@ -1007,7 +1063,8 @@ window.list = [
       "Critical": 0.5,
       "CritDam": "15",
       "AP cost": 20,
-      "ammo": "Electron charge pack "
+      "ammo": "Electron charge pack ",
+      "Type": "Laser, Professional"
     },
     {
       "Name": " Laser rifle ",
@@ -1017,7 +1074,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "22",
       "AP cost": 18,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": "Laser rifle split",
@@ -1027,7 +1085,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "22",
       "AP cost": 18,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Recharger rifle ",
@@ -1047,7 +1106,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "22",
       "AP cost": 23,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " Van Graff laser rifle ",
@@ -1057,7 +1117,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "15",
       "AP cost": 18,
-      "ammo": "Microfusion cell "
+      "ammo": "Microfusion cell ",
+      "Type": "Laser"
     },
     {
       "Name": " YCS\\186 ",
@@ -1077,7 +1138,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "38",
       "AP cost": 20,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Professional"
     },
     {
       "Name": " Plasma pistol ",
@@ -1087,7 +1149,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "33",
       "AP cost": 30,
-      "ammo": "Energy cell "
+      "ammo": "Energy cell ",
+      "Type": "Professional"
     },
     {
       "Name": " Multiplas rifle ",
@@ -1197,7 +1260,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "15",
       "AP cost": 32,
-      "ammo": "40mm grenade "
+      "ammo": "40mm grenade ",
+      "Type": "Grunt"
     },
     {
       "Name": " Grenade launcher ",
@@ -1207,7 +1271,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 35,
-      "ammo": "40mm grenade "
+      "ammo": "40mm grenade ",
+      "Type": "Grunt"
     },
     {
       "Name": " Grenade machinegun ",
@@ -1287,7 +1352,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "1",
       "AP cost": 35,
-      "ammo": "40mm grenade "
+      "ammo": "40mm grenade ",
+      "Type": "Grunt"
     },
     {
       "Name": " Dynamite ",
@@ -1297,7 +1363,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy"
     },
     {
       "Name": " Fire bomb ",
@@ -1307,7 +1374,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Throwing"
     },
     {
       "Name": " Flash bang ",
@@ -1327,7 +1395,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Grun, Throwing"
     },
     {
       "Name": " Holy Frag Grenade ",
@@ -1337,7 +1406,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Grunt, Throwing"
     },
     {
       "Name": " Incendiary grenade ",
@@ -1357,7 +1427,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Throwing"
     },
     {
       "Name": " MFC grenade (Mad Bomber) ",
@@ -1367,7 +1438,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 35,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Nuka-grenade ",
@@ -1377,7 +1449,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Plasma grenade ",
@@ -1387,7 +1460,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Proton throwing axe ",
@@ -1397,7 +1471,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "29",
       "AP cost": 20,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Protonic inversal throwing axe ",
@@ -1407,7 +1482,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "29",
       "AP cost": 22,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Pulse grenade ",
@@ -1417,7 +1493,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Throwing hatchet ",
@@ -1427,7 +1504,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "20",
       "AP cost": 22,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Throwing"
     },
     {
       "Name": " Throwing knife ",
@@ -1437,7 +1515,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "15",
       "AP cost": 20,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Throwing"
     },
     {
       "Name": " Throwing knife spear ",
@@ -1457,7 +1536,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "50",
       "AP cost": 24,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Tin grenade (Mad Bomber) ",
@@ -1467,7 +1547,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "0",
       "AP cost": 35,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Throwing"
     },
     {
       "Name": " Tomahawk ",
@@ -1477,7 +1558,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "30",
       "AP cost": 23,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Throwing"
     },
     {
       "Name": " Blade of the East ",
@@ -1507,7 +1589,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "45",
       "AP cost": 17,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy"
     },
     {
       "Name": " Bowie knife ",
@@ -1517,7 +1600,8 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "35",
       "AP cost": 20,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy"
     },
     {
       "Name": " Broad machete ",
@@ -1557,7 +1641,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "22",
       "AP cost": 17,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Grunt"
     },
     {
       "Name": " Chopper ",
@@ -1587,7 +1672,8 @@ window.list = [
       "Critical": 2,
       "CritDam": "15",
       "AP cost": 17,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy, Grunt"
     },
     {
       "Name": " Cosmic knife ",
@@ -1657,7 +1743,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "16",
       "AP cost": 22,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy"
     },
     {
       "Name": " Katana ",
@@ -1677,7 +1764,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "8",
       "AP cost": 20,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy"
     },
     {
       "Name": " Knife spear ",
@@ -2007,7 +2095,8 @@ window.list = [
       "Critical": 1,
       "CritDam": "19",
       "AP cost": 21,
-      "ammo": ""
+      "ammo": "",
+      "Type": "Cowboy"
     },
     {
       "Name": " X-2 antenna ",
