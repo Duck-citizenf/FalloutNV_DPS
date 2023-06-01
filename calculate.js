@@ -70,47 +70,48 @@ function calc(){
     let playerSkill = 100;
     for (const gun of window.list){ 
         for (const bullet of window.ammo){  
-            if(gun.ammo.trim() == bullet.class){
-                let line = document.createElement("tr");
-                document.getElementById('table').appendChild(line);
-                line.appendChild(document.createElement("td")).textContent = gun.Name;
-                line.appendChild(document.createElement("td")).textContent = bullet.Name;
+                if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
+                    let line = document.createElement("tr");
+                    document.getElementById('table').appendChild(line);
+                    line.appendChild(document.createElement("td")).textContent = gun.Name;
+                    line.appendChild(document.createElement("td")).textContent = bullet.Name;
 
-                let CritChance = playerLuck
-                    +(Ulysses?5:0)
-                    +(stRecon?5:0)
-                    +(Armor87?3:0)
-                    +(Eliteriot?5:0)
-                    +(SaltUponWound?2:0)
-                    +(JoshuaGraham?3:0)
-                    +(Markedbeast?2:0)
-                    +(Finesse?5:0)
-                    +(BuilttoDestroy?3:0)
-                    +(TruePoliceStories&&Comprehension?10:0)
-                    +(TruePoliceStories&&!Comprehension?5:0);
-                CritChance = CritChance * gun.Critical;
-                CritChance = LightTouch ? CritChance+5 : CritChance;
-                CritChance = Math.min(CritChance, 100)
-                
-
-
-
-
-                let Crit = (CritChance/100)*Number(gun.CritDam)
-                let Dam = gun.Damage*(playerSkill/100)+Crit*enemyDR;
-                let pDT;
-                if(Math.sign(bullet.DT) == 1){
-                    pDT = enemyDT*bullet.DT
+                    let CritChance = playerLuck
+                        +(Ulysses?5:0)
+                        +(stRecon?5:0)
+                        +(Armor87?3:0)
+                        +(Eliteriot?5:0)
+                        +(SaltUponWound?2:0)
+                        +(JoshuaGraham?3:0)
+                        +(Markedbeast?2:0)
+                        +(Finesse?5:0)
+                        +(BuilttoDestroy?3:0)
+                        +(TruePoliceStories&&Comprehension?10:0)
+                        +(TruePoliceStories&&!Comprehension?5:0);
+                    CritChance = CritChance * gun.Critical;
+                    CritChance = LightTouch ? CritChance+5 : CritChance;
+                    if('Type' in gun && gun.Type.includes('Laser') && LaserCommander){
+                        CritChance = CritChance+10;
+                    }
+                    CritChance = Math.min(CritChance, 100)
+                    let Crit = (CritChance/100)*Number(gun.CritDam)
+                    let Dam = gun.Damage*(playerSkill/100)+Crit*enemyDR;
+                    let pDT;
+                    if(Math.sign(bullet.DT) == 1){
+                        pDT = enemyDT*bullet.DT
+                    }
+                    else{
+                        pDT = enemyDT-bullet.DT
+                    }
+                    if('Type' in gun && gun.Type.includes('Shotgun') && ShotgunSurgeon){
+                        pDT = pDT-10;
+                    }
+                    let DT = Math.max(pDT, 0);
+                    let Dam_adjusted = Math.max(Dam*0.2,Dam-DT);
+                    let fin_dam = Dam_adjusted*bullet.Dam
+                    line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
+                    // line.appendChild(document.createElement("td")).textContent = auth_dam;
                 }
-                else{
-                    pDT = enemyDT-bullet.DT
-                }
-                let DT = Math.max(pDT, 0);
-                let Dam_adjusted = Math.max(Dam*0.2,Dam-DT);
-                let fin_dam = Dam_adjusted*bullet.Dam
-                line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
-                // line.appendChild(document.createElement("td")).textContent = auth_dam;
-            }
         }
         if(gun.ammo.trim() == ""){
             let line = document.createElement("tr");

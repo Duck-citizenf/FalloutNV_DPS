@@ -203,7 +203,7 @@ window.list = [
       "Critical": 1.5,
       "CritDam": "70",
       "AP cost": 28,
-      "ammo": "BB ",
+      "ammo": "BBs ",
       "Type": "Cowboy"
     },
     {
@@ -256,7 +256,7 @@ window.list = [
       "Critical": 1,
       "CritDam": "4",
       "AP cost": 28,
-      "ammo": "BB ",
+      "ammo": "BBs ",
       "Type": "Cowboy"
     },
     {
@@ -964,7 +964,7 @@ window.list = [
       "Attack speed": 1.03,
       "proj": 1,
       "Critical": 1,
-      "CritDam": "30 + 100 ",
+      "CritDam": "30",
       "AP cost": 30,
       "ammo": "Energy cell ",
       "Type": "Laser, Professional"

@@ -121,7 +121,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".44 magnum round",
+      "class": ".44 Magnum round",
       "Name": "standard",
       "Dam": 1,
       "DT": 1,
@@ -132,7 +132,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".44 magnum round",
+      "class": ".44 Magnum round",
       "Name": ".44 special round",
       "Dam": 0.75,
       "DT": 1,
@@ -143,7 +143,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".44 magnum round",
+      "class": ".44 Magnum round",
       "Name": "SWC (hand load)",
       "Dam": 1.2,
       "DT": -6,
@@ -154,7 +154,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".44 magnum round",
+      "class": ".44 Magnum round",
       "Name": "hollow point",
       "Dam": 1.75,
       "DT": 3,
@@ -209,7 +209,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".45-70 gov't",
+      "class": ".45-70 Gov't",
       "Name": "standard",
       "Dam": 1,
       "DT": 1,
@@ -220,7 +220,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".45-70 gov't",
+      "class": ".45-70 Gov't",
       "Name": "SWC (hand load)",
       "Dam": 1.2,
       "DT": -6,
@@ -231,7 +231,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": ".45-70 gov't",
+      "class": ".45-70 Gov't",
       "Name": "hollow point",
       "Dam": 1.75,
       "DT": 3,
@@ -1166,7 +1166,7 @@ window.ammo = [
       "PA": null
     },
     {
-      "class": "Nail",
+      "class": "Nails",
       "Name": "Nail",
       "Dam": 1,
       "DT": -5,
