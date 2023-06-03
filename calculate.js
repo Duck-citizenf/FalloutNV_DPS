@@ -64,8 +64,8 @@ function calc(){
     document.getElementById('table').innerHTML = '';
     let enemyDT = 1;
     let enemyDR = 1;
-    let playerLuck = 1;
-    let playerStr = 1;
+    let playerLuck = Number(document.getElementById('Luck').value);
+    let playerStr = Number(document.getElementById('Strength').value);
     let playerSkill = 100;
     for (const gun of window.list){ 
         for (const bullet of window.ammo){  
