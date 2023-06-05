@@ -75,7 +75,8 @@ function calc(){
     let playerSkill = 100;
     let enemyDT = Number(document.getElementById('DT').value);
     for (const gun of window.list){ 
-        for (const bullet of window.ammo){  
+        for (const bullet of window.ammo){ 
+            if('Type' in gun) {
             if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
                 let line = document.createElement("tr");
                 document.getElementById('table').appendChild(line);
@@ -104,15 +105,19 @@ function calc(){
                     CritChance = CritChance+4;
                 }
                 CritChance = Math.min(CritChance, 100)
-                let Crit = (CritChance/100)*Number(gun.CritDam
+                let Crit = (CritChance/100)*Number(gun.CritDam)
                     *(Hunter?1.75:1)
                     *(BetterCritical?1.5:1)
                     *(JustLuckyImAlive?1.5:1)
-                    *(StealthGirl?1.1:1))
+                    *(StealthGirl?1.1:1);
                 if('Type' in gun && gun.Type.includes('Professional') && TheProfession){
                     Crit = Crit*1.2;
                 }
-                let Dam = gun.Damage*(playerSkill/100)+Crit*enemyDR;
+                let SumDam = (gun.Damage/bullet.proj)/gun.proj;
+                if('Type' in gun && gun.Type.includes('Laser') && CamaraderE){
+                    SumDam +=5;
+                }
+                let Dam = SumDam*(playerSkill/100)+Crit*enemyDR;
                 let pDT; 
                 if(Math.sign(bullet.DT) == 1){
                     pDT = enemyDT*bullet.DT
@@ -159,9 +164,9 @@ function calc(){
                 if('Type' in gun && gun.Type.includes('Grunt') && Grunt){
                     fin_dam*1.25
                 };
-                fin_dam = fin_dam*gun.Attackspeed;
+                fin_dam = fin_dam*gun.Attackspeed*gun.proj*bullet.proj;
                 line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
-            }
+            }}
         }
         if(gun.ammo.trim() == ""){
             let line = document.createElement("tr");
