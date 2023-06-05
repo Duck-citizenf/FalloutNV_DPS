@@ -175,10 +175,6 @@ function calc(){
             line.appendChild(document.createElement("td"));
             line.appendChild(document.createElement("td")).textContent = gun.Damage;
         }
-        // let name = document.createElement("td");
-        // name.textContent = gun.Name;
-        // name.colSpan = colspan;
-        // line.prepend(name)
     }
 }
 calc();
