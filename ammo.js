@@ -6,7 +6,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -17,7 +17,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -28,7 +28,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -39,7 +39,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -50,7 +50,7 @@ window.ammo = [
       "DT": -15,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -61,7 +61,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -72,7 +72,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -83,7 +83,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -94,7 +94,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -105,7 +105,7 @@ window.ammo = [
       "DT": -3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -116,7 +116,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -127,7 +127,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -138,7 +138,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -149,7 +149,7 @@ window.ammo = [
       "DT": -6,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -160,7 +160,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -171,7 +171,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -182,7 +182,7 @@ window.ammo = [
       "DT": -2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -193,7 +193,7 @@ window.ammo = [
       "DT": -4,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -204,7 +204,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -215,7 +215,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -226,7 +226,7 @@ window.ammo = [
       "DT": -6,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -237,7 +237,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -248,7 +248,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -259,7 +259,7 @@ window.ammo = [
       "DT": -15,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -270,7 +270,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -281,7 +281,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "2/5s",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -292,7 +292,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "80",
+      "exp": 80,
       "robot": null,
       "PA": null
     },
@@ -303,7 +303,7 @@ window.ammo = [
       "DT": -10,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -314,7 +314,7 @@ window.ammo = [
       "DT": -25,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -325,7 +325,7 @@ window.ammo = [
       "DT": -10,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -336,7 +336,7 @@ window.ammo = [
       "DT": -10,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -347,7 +347,7 @@ window.ammo = [
       "DT": 2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -358,7 +358,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -369,7 +369,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -380,7 +380,7 @@ window.ammo = [
       "DT": -15,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -391,7 +391,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -402,7 +402,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -413,7 +413,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -424,7 +424,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -435,7 +435,7 @@ window.ammo = [
       "DT": -2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -446,7 +446,7 @@ window.ammo = [
       "DT": 2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -457,7 +457,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -468,7 +468,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -479,7 +479,7 @@ window.ammo = [
       "DT": 2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -490,7 +490,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -501,7 +501,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -512,7 +512,7 @@ window.ammo = [
       "DT": 2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -523,7 +523,7 @@ window.ammo = [
       "DT": 3,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -534,7 +534,7 @@ window.ammo = [
       "DT": 1,
       "proj": 7,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -545,7 +545,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -556,7 +556,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": 50,
       "PA": 25
     },
@@ -567,7 +567,7 @@ window.ammo = [
       "DT": -6,
       "proj": 5,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -578,7 +578,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "8/5s",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -589,7 +589,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -600,7 +600,7 @@ window.ammo = [
       "DT": 1,
       "proj": 4,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -611,7 +611,7 @@ window.ammo = [
       "DT": -2,
       "proj": 8,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -622,7 +622,7 @@ window.ammo = [
       "DT": -2,
       "proj": 7,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -633,7 +633,7 @@ window.ammo = [
       "DT": -2,
       "proj": 4,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -644,7 +644,7 @@ window.ammo = [
       "DT": 1,
       "proj": 7,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -655,7 +655,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": 50,
       "PA": 25
     },
@@ -666,7 +666,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -677,7 +677,7 @@ window.ammo = [
       "DT": 1,
       "proj": 4,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -688,7 +688,7 @@ window.ammo = [
       "DT": -2,
       "proj": 7,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -699,7 +699,7 @@ window.ammo = [
       "DT": -2,
       "proj": 4,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -710,7 +710,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -721,7 +721,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": 75,
       "PA": 30
     },
@@ -732,7 +732,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -743,7 +743,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -754,7 +754,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -765,7 +765,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -776,7 +776,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": 150,
       "PA": 60
     },
@@ -787,7 +787,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "6/15s",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -798,7 +798,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -809,7 +809,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -820,7 +820,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -831,7 +831,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -842,7 +842,7 @@ window.ammo = [
       "DT": 1,
       "proj": 9,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -853,7 +853,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -864,7 +864,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -875,7 +875,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -886,7 +886,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -897,7 +897,7 @@ window.ammo = [
       "DT": 1,
       "proj": 9,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -908,7 +908,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -919,7 +919,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "2/8s",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -930,7 +930,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -941,7 +941,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -952,7 +952,7 @@ window.ammo = [
       "DT": -2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -963,7 +963,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -974,7 +974,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -985,7 +985,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -996,7 +996,7 @@ window.ammo = [
       "DT": -10,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1007,7 +1007,7 @@ window.ammo = [
       "DT": -2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1018,7 +1018,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1029,7 +1029,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1040,7 +1040,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1051,7 +1051,7 @@ window.ammo = [
       "DT": -10,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1062,7 +1062,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1073,7 +1073,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1084,7 +1084,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1095,7 +1095,7 @@ window.ammo = [
       "DT": -2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1106,7 +1106,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1117,7 +1117,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1128,7 +1128,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1139,7 +1139,7 @@ window.ammo = [
       "DT": -10,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1150,7 +1150,7 @@ window.ammo = [
       "DT": -2,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1161,7 +1161,7 @@ window.ammo = [
       "DT": 1,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     },
@@ -1172,7 +1172,7 @@ window.ammo = [
       "DT": -5,
       "proj": 1,
       "dot": "",
-      "exp": "",
+      "exp": 0,
       "robot": null,
       "PA": null
     }

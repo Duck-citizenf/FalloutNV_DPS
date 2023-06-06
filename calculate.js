@@ -2,7 +2,14 @@ let inputs = document.querySelectorAll('input');
 arrayinputs = Array.from(inputs);
 arrayinputs.map(w => w.addEventListener('change', calc));
 
-function calc(){
+
+
+function calc_common(gun, bullet){
+    let enemyDR = 1;
+    let playerLuck = Number(document.getElementById('Luck').value);
+    let playerStr = Number(document.getElementById('Strength').value);
+    let playerSkill = 100;
+    let enemyDT = Number(document.getElementById('DT').value);
     let BlackWidow = document.getElementById("Black Widow").checked; //10% dam humanoids
     let Grunt = document.getElementById("Grunt").checked; //25% dam grunt type bonus
     let Cowboy = document.getElementById("Cowboy").checked; //25% dam cowboy type bonus
@@ -33,7 +40,7 @@ function calc(){
     let MutantMassacrer = document.getElementById("Mutant Massacrer").checked; //10% dam Mutants
     let SetLasers = document.getElementById("Set Lasers for Fun").checked; //4% crit energy type bonus
     let LightTouch = document.getElementById("Light Touch").checked; //5% crit
-    let ElijahsRambl = document.getElementById("Elijah's Ramblings").checked; //50% critdam melee
+    let ElijahsRambl = document.getElementById("Elijah's Ramblings").checked; //50% crit dam melee
     let FightthePower = document.getElementById("Fight the Power!").checked; //5% crit NCR legion
     let EyeforEye = document.getElementById("Eye for Eye").checked; //50% dam
     let Atomic = document.getElementById("Atomic!").checked; //25% speed non-automatic
@@ -67,113 +74,152 @@ function calc(){
     let SaltUponWound = document.getElementById("Salt-Upon-Wounds' helmet").checked;
 
     //Weapon types: Laser, cowboy, grunt, professional, shotgun, throwing, unarmed, melee, explosive, flame, energy
+    let UnMel = gun.Type.includes('Melee')||gun.Type.includes('Unarmed');
+    let LasEn = gun.Type.includes('Laser')||gun.Type.includes('Energy');
+    //Calculating critical chance
+    let CritChance = (playerLuck
+        +(Ulysses?5:0)
+        +(stRecon?5:0)
+        +(Armor87?3:0)
+        +(Eliteriot?5:0)
+        +(SaltUponWound?2:0)
+        +(JoshuaGraham?3:0)
+        +(Markedbeast?2:0)
+        +(Finesse?5:0)
+        +(BuilttoDestroy?3:0)
+        +(TruePoliceStories&&Comprehension?10:0)
+        +(TruePoliceStories&&!Comprehension?5:0))
+        *gun.Critical
+        +(LightTouch?5:0)
+        +(FightthePower?5:0);
+        +(gun.Type.includes('Laser')&&LaserCommander?10:0);
+        +(LasEn&&SetLasers?4:0)
+        +(UnMel&&Ninja?15:0);
 
+    CritChance = Math.min(CritChance, 100)
+    
+    //Calculating critical damage
+    let Crit = (CritChance/100)*Number(gun.CritDam)
+        *(Hunter?1.75:1)
+        *(BetterCritical?1.5:1)
+        *(JustLuckyImAlive?1.5:1)
+        *(StealthGirl?1.1:1)
+        *(gun.Type.includes('Professional')&&TheProfession?1.2:1)
+        *(UnMel&&Ninja?1.25:1)
+        *(gun.Type.includes('Melee')&&ElijahsRambl?1.5:1)
+        *(UnMel&&HeavyHanded?0.4:1)
+        +gun.CritExp;
+
+    //Calculating flat damage modifiers
+    let SumDam = gun.Damage;
+    if(gun.ammo != ""){
+        SumDam = (gun.Damage/bullet.proj)/gun.proj;
+    }
+    SumDam +=(gun.Type.includes('Laser')&&CamaraderE?5:0)
+        +(UnMel&&Weaponbindingritual?10:0)
+        +(gun.Type.includes('Unarmed')&&Daturana?1:0)
+        +(gun.Type.includes('Melee')?playerStr*0.5:0)
+        +(gun.Type.includes('Unarmed')?(playerSkill/20)+0.5:0);
+    
+    //Calculating explosive damage
+    let SumExp = gun.Exp
+    if(gun.ammo != ""){
+        SumExp = ((gun.Exp/bullet.proj)/gun.proj);
+    }
+
+    //Damage+Critical damage(average)
+    let Dam = SumDam*(playerSkill/100)
+        +(gun.ammo != ""?bullet.exp:0)
+        +Crit*enemyDR;
+
+    //Reducing damage with enemy's defence
+    let pDT = enemyDT; 
+    if(gun.ammo != ""){
+        if(Math.sign(bullet.DT) == 1){
+            pDT = enemyDT*bullet.DT
+        }
+        else{
+            pDT = enemyDT-bullet.DT
+        }
+    }
+    pDT = pDT
+        -(gun.Type.includes('Shotgun')&&ShotgunSurgeon?10:0)
+        -(UnMel&&PiercingStrike?15:0);
+    pDT = pDT*(gun.Type.includes('Auto')&&UnMel?0:1);
+    let DT = Math.max(pDT, 0);
+    let Dam_adjusted = Math.max(Dam*0.2,Dam-DT);
+    let Exp_adjusted = Math.max(SumExp*0.2,SumExp-DT);
+
+    //Applying all bonuses
+    let fin_dam = (Dam_adjusted+Exp_adjusted*(gun.Type.Explosive?1.5:1))
+        *(gun.ammo != ""?bullet.Dam:1)
+        *(BlackWidow?1.1:1)
+        *(LivingAnatomy?1.05:1)
+        *(Entomologist?1.5:1)
+        *(BloodyMess?1.05:1)
+        *(LordDeath?1.04:1)
+        *(Marked?1.1:1)
+        *(Abominable?1.1:1)
+        *(AnimalControl?1.1:1)
+        *(BugStomper?1.1:1)
+        *(MachineHead?1.06:1)
+        *(MutantMassacrer?1.1:1)
+        *(EyeforEye?1.5:1)
+        *(ThoughtYouDied?1.1:1)
+        *(LonesomeRoad?1.1:1)
+        *(HotBlooded?1.15:1)
+        *(DNAgent?1.1:1)
+        *(DNAvenger?1.3:1)
+        *(ImplantC13?1.1:1)
+        *(SneeringImperialist?1.15:1)
+        *(RoboticsExpert?1.25:1)
+        *(UnMel&&HeavyHanded?1.2:1)
+        *(Psycho?1.25:1)
+        *(Yaoguai?1.1:1)
+        *(gun.Type.includes('Laser')&&LaserCommander?1.15:1)
+        *(gun.Type.includes('Pyro')&&Pyromaniac?1.5:1)
+        *(gun.Type.includes('Cowboy')&&Cowboy?1.25:1)
+        *(gun.Type.includes('Grunt')&&Grunt?1.25:1)
+        *(UnMel&&Purifier?1.5:1);
+
+    //Attack speed modifiers
+    let AttSpeed = gun.Attackspeed;
+    if(!gun.Type.includes('Auto')){
+        AttSpeed = AttSpeed
+            *(UnMel&&Slayer?1.3:1)
+            *(UnMel&&MeleeHacker?1.1:1)
+            *(Atomic?1.25:1)
+            *(AintLikeThatNow?1.2:1)
+            *(Rushingwater?1.5:1)
+            *(!UnMel&&FastShot?1.2:1)
+            *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
+    }
+
+    //Appling hits per second
+    fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
+    return fin_dam;
+}
+
+function calc(){
     document.getElementById('table').innerHTML = '';
-    let enemyDR = 1;
-    let playerLuck = Number(document.getElementById('Luck').value);
-    let playerStr = Number(document.getElementById('Strength').value);
-    let playerSkill = 100;
-    let enemyDT = Number(document.getElementById('DT').value);
     for (const gun of window.list){ 
         for (const bullet of window.ammo){ 
-            if('Type' in gun) {
             if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
                 let line = document.createElement("tr");
                 document.getElementById('table').appendChild(line);
                 line.appendChild(document.createElement("td")).textContent = gun.Name;
                 line.appendChild(document.createElement("td")).textContent = bullet.Name;
-
-                let CritChance = playerLuck
-                    +(Ulysses?5:0)
-                    +(stRecon?5:0)
-                    +(Armor87?3:0)
-                    +(Eliteriot?5:0)
-                    +(SaltUponWound?2:0)
-                    +(JoshuaGraham?3:0)
-                    +(Markedbeast?2:0)
-                    +(Finesse?5:0)
-                    +(BuilttoDestroy?3:0)
-                    +(TruePoliceStories&&Comprehension?10:0)
-                    +(TruePoliceStories&&!Comprehension?5:0);
-                CritChance = CritChance * gun.Critical;
-                CritChance = LightTouch ? CritChance+5 : CritChance;
-                CritChance = FightthePower ? CritChance+5 : CritChance;
-                if('Type' in gun && gun.Type.includes('Laser') && LaserCommander){
-                    CritChance = CritChance+10;
-                }
-                if('Type' in gun && (gun.Type.includes('Laser') || gun.Type.includes('Energy')) && SetLasers){
-                    CritChance = CritChance+4;
-                }
-                CritChance = Math.min(CritChance, 100)
-                let Crit = (CritChance/100)*Number(gun.CritDam)
-                    *(Hunter?1.75:1)
-                    *(BetterCritical?1.5:1)
-                    *(JustLuckyImAlive?1.5:1)
-                    *(StealthGirl?1.1:1);
-                if('Type' in gun && gun.Type.includes('Professional') && TheProfession){
-                    Crit = Crit*1.2;
-                }
-                let SumDam = (gun.Damage/bullet.proj)/gun.proj;
-                if('Type' in gun && gun.Type.includes('Laser') && CamaraderE){
-                    SumDam +=5;
-                }
-                let Dam = SumDam*(playerSkill/100)+Crit*enemyDR;
-                let pDT; 
-                if(Math.sign(bullet.DT) == 1){
-                    pDT = enemyDT*bullet.DT
-                }
-                else{
-                    pDT = enemyDT-bullet.DT
-                }
-                if('Type' in gun && gun.Type.includes('Shotgun') && ShotgunSurgeon){
-                    pDT = pDT-10;
-                }
-                let DT = Math.max(pDT, 0);
-                let Dam_adjusted = Math.max(Dam*0.2,Dam-DT);
-                let fin_dam = Dam_adjusted*bullet.Dam
-                    *(BlackWidow?1.1:1)
-                    *(LivingAnatomy?1.05:1)
-                    *(Entomologist?1.5:1)
-                    *(BloodyMess?1.05:1)
-                    *(LordDeath?1.04:1)
-                    *(Marked?1.1:1)
-                    *(Abominable?1.1:1)
-                    *(AnimalControl?1.1:1)
-                    *(BugStomper?1.1:1)
-                    *(MachineHead?1.06:1)
-                    *(MutantMassacrer?1.1:1)
-                    *(EyeforEye?1.5:1)
-                    *(ThoughtYouDied?1.1:1)
-                    *(LonesomeRoad?1.1:1)
-                    *(HotBlooded?1.15:1)
-                    *(DNAgent?1.1:1)
-                    *(DNAvenger?1.3:1)
-                    *(ImplantC13?1.1:1)
-                    *(SneeringImperialist?1.15:1)
-                    *(Psycho?1.25:1)
-                    *(Yaoguai?1.1:1);
-                if('Type' in gun && gun.Type.includes('Laser') && LaserCommander){
-                    fin_dam*1.15
-                };
-                if('Type' in gun && gun.Type.includes('Pyro') && Pyromaniac){
-                    fin_dam*1.5
-                };
-                if('Type' in gun && gun.Type.includes('Cowboy') && Cowboy){
-                    fin_dam*1.25
-                };
-                if('Type' in gun && gun.Type.includes('Grunt') && Grunt){
-                    fin_dam*1.25
-                };
-                fin_dam = fin_dam*gun.Attackspeed*gun.proj*bullet.proj;
+                fin_dam = calc_common(gun, bullet);
                 line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
-            }}
+            }
         }
         if(gun.ammo.trim() == ""){
             let line = document.createElement("tr");
             document.getElementById('table').appendChild(line);
             line.appendChild(document.createElement("td")).textContent = gun.Name;
             line.appendChild(document.createElement("td"));
-            line.appendChild(document.createElement("td")).textContent = gun.Damage;
+            fin_dam = calc_common(gun);
+            line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
         }
     }
 }
