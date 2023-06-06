@@ -8,6 +8,7 @@ function calc_common(gun, bullet){
     let enemyDR = 1;
     let playerLuck = Number(document.getElementById('Luck').value);
     let playerStr = Number(document.getElementById('Strength').value);
+    let playerAgi = Number(document.getElementById('Agility').value);
     let playerSkill = 100;
     let enemyDT = Number(document.getElementById('DT').value);
     let BlackWidow = document.getElementById("Black Widow").checked; //10% dam humanoids
@@ -33,6 +34,7 @@ function calc_common(gun, bullet){
     let LordDeath = document.getElementById("Lord Death").checked; //4% dam
     let Marked = document.getElementById("Marked").checked; //10% dam marked 
     let Abominable = document.getElementById("Abominable").checked; //10% dam abominations
+    let CertifiedTech = document.getElementById("Certified Tech").checked; //10% dam abominations
     let AnimalControl = document.getElementById("Animal Control").checked; //10% dam animals
     let BugStomper = document.getElementById("Bug Stomper").checked; //10% dam insects
     let MachineHead = document.getElementById("Machine Head").checked; //6% dam robots
@@ -49,6 +51,7 @@ function calc_common(gun, bullet){
     let ThoughtYouDied = document.getElementById("Thought You Died").checked; //10% dam
     let LonesomeRoad = document.getElementById("Lonesome Road").checked; //10% dam
     let CamaraderE = document.getElementById("Camarader-E").checked; //+5 dam laser
+    let RapidReload = document.getElementById("Rapid Reload").checked; // 25% faster reload
     let DNAgent = document.getElementById("DNAgent").checked; //10% dam Night stalkers
     let DNAvenger = document.getElementById("DNAvenger").checked; //30% dam Cazadores
     let ImplantC13 = document.getElementById("Implant C-13").checked; //10% dam Cazadores
@@ -92,6 +95,7 @@ function calc_common(gun, bullet){
         *gun.Critical
         +(LightTouch?5:0)
         +(FightthePower?5:0);
+        +(CertifiedTech?25:0);
         +(gun.Type.includes('Laser')&&LaserCommander?10:0);
         +(LasEn&&SetLasers?4:0)
         +(UnMel&&Ninja?15:0);
@@ -151,7 +155,7 @@ function calc_common(gun, bullet){
     let Exp_adjusted = Math.max(SumExp*0.2,SumExp-DT);
 
     //Applying all bonuses
-    let fin_dam = (Dam_adjusted+Exp_adjusted*(gun.Type.Explosive?1.5:1))
+    let fin_dam = (Dam_adjusted+Exp_adjusted*(gun.Type.Explosive&&DemolitionExpert?1.5:1))
         *(gun.ammo != ""?bullet.Dam:1)
         *(BlackWidow?1.1:1)
         *(LivingAnatomy?1.05:1)
@@ -183,16 +187,23 @@ function calc_common(gun, bullet){
         *(UnMel&&Purifier?1.5:1);
 
     //Attack speed modifiers
-    let AttSpeed = gun.Attackspeed;
-    if(!gun.Type.includes('Auto')){
-        AttSpeed = AttSpeed
-            *(UnMel&&Slayer?1.3:1)
-            *(UnMel&&MeleeHacker?1.1:1)
-            *(Atomic?1.25:1)
-            *(AintLikeThatNow?1.2:1)
-            *(Rushingwater?1.5:1)
-            *(!UnMel&&FastShot?1.2:1)
-            *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
+    let AttSpeed;
+    if(!gun.Type.includes('OneBull')){
+        AttSpeed = gun.Attackspeed;
+        if(!gun.Type.includes('Auto')){
+            AttSpeed = AttSpeed
+                *(UnMel&&Slayer?1.3:1)
+                *(UnMel&&MeleeHacker?1.1:1)
+                *(Atomic?1.25:1)
+                *(AintLikeThatNow?1.2:1)
+                *(Rushingwater?1.5:1)
+                *(!UnMel&&FastShot?1.2:1)
+                *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
+        }
+    }
+    else{
+        AttSpeed = 1/(gun.Reload/((0.5+playerAgi*0.1)*(RapidReload?1.25:1)));
+        
     }
 
     //Appling hits per second

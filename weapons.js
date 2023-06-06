@@ -1601,6 +1601,7 @@ window.list = [
     "Name": "Gauss Rifle",
     "Damage": 120,
     "Exp": 0,
+    "Reload": 2.3,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1612,7 +1613,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 40,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy, OneBull"
   },
   {
     "Name": "Holorifle",
@@ -1771,6 +1772,7 @@ window.list = [
     "Name": "YCS\\186",
     "Damage": 140,
     "Exp": 0,
+    "Reload": 2.3,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1782,7 +1784,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 40,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy, OneBull"
   },
   {
     "Name": "Plasma Defender",
@@ -1907,6 +1909,7 @@ window.list = [
     "Name": "Annabelle",
     "Damage": 150,
     "Exp": 200,
+    "Reload": 4,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1918,12 +1921,13 @@ window.list = [
     "CritDot": null,
     "AP cost": 47,
     "ammo": "Missile",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Esther",
     "Damage": 475,
     "Exp": 600,
+    "Reload": 3,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1935,12 +1939,13 @@ window.list = [
     "CritDot": null,
     "AP cost": 55,
     "ammo": "Mini nuke",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Fat Man",
     "Damage": 400,
     "Exp": 600,
+    "Reload": 3,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1952,12 +1957,13 @@ window.list = [
     "CritDot": null,
     "AP cost": 65,
     "ammo": "Mini nuke",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Great Bear grenade rifle",
     "Damage": 15,
     "Exp": 100,
+    "Reload": 2,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1969,12 +1975,13 @@ window.list = [
     "CritDot": null,
     "AP cost": 32,
     "ammo": "40mm grenade",
-    "Type": "Grunt, Explosive"
+    "Type": "Grunt, Explosive, OneBull"
   },
   {
     "Name": "Grenade launcher",
     "Damage": 30,
     "Exp": 100,
+    "Reload": 2,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1986,7 +1993,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Grunt, Explosive"
+    "Type": "Grunt, Explosive, OneBull"
   },
   {
     "Name": "Grenade machinegun",
@@ -2009,6 +2016,7 @@ window.list = [
     "Name": "Grenade rifle",
     "Damage": 2,
     "Exp": 100,
+    "Reload": 2,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -2020,12 +2028,13 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Mercenary's grenade rifle",
     "Damage": 2,
     "Exp": 100,
+    "Reload": 2,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -2037,7 +2046,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Mercy",
@@ -2060,6 +2069,7 @@ window.list = [
     "Name": "Missile launcher",
     "Damage": 125,
     "Exp": 200,
+    "Reload": 4,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -2071,7 +2081,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 55,
     "ammo": "Missile",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Red Glare",
@@ -2094,6 +2104,7 @@ window.list = [
     "Name": "Red Victory grenade rifle",
     "Damage": 2,
     "Exp": 100,
+    "Reload": 2,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -2105,12 +2116,13 @@ window.list = [
     "CritDot": null,
     "AP cost": 29,
     "ammo": "40mm grenade",
-    "Type": "Explosive"
+    "Type": "Explosive, OneBull"
   },
   {
     "Name": "Thump-Thump",
     "Damage": 2,
     "Exp": 100,
+    "Reload": 2,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -2122,7 +2134,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Grunt, Explosive"
+    "Type": "Grunt, Explosive, OneBull"
   },
   {
     "Name": "Dynamite",
