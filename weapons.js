@@ -1221,7 +1221,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": "Microfusion cell",
-    "Type": "Auto, Energy"
+    "Type": "Energy"
   },
   {
     "Name": "Shoulder mounted machine gun",

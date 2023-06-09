@@ -245,8 +245,8 @@ function calc(){
         document.getElementById('table').appendChild(line);
         line.appendChild(document.createElement("td")).textContent = element.Name;
         line.appendChild(document.createElement("td")).textContent = element.Bullet;
-        line.appendChild(document.createElement("td")).textContent = Math.round(element.DPS);
-        line.appendChild(document.createElement("td")).textContent = Math.round(element.Speed);
+        line.appendChild(document.createElement("td")).textContent = Math.round(element.DPS*100)/100;
+        line.appendChild(document.createElement("td")).textContent = Math.round(element.Speed*100)/100;
     }
 }
 calc();
