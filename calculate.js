@@ -2,7 +2,7 @@ let inputs = document.querySelectorAll('input');
 arrayinputs = Array.from(inputs);
 arrayinputs.map(w => w.addEventListener('change', calc));
 
-
+let dpslist = [];
 
 function calc_common(gun, bullet){
     let enemyDR = 1;
@@ -155,7 +155,7 @@ function calc_common(gun, bullet){
     let Exp_adjusted = Math.max(SumExp*0.2,SumExp-DT);
 
     //Applying all bonuses
-    let fin_dam = (Dam_adjusted+Exp_adjusted*(gun.Type.Explosive&&DemolitionExpert?1.5:1))
+    let fin_dam = (Dam_adjusted+Exp_adjusted*(gun.Type.includes('Explosive')&&DemolitionExpert?1.5:1))
         *(gun.ammo != ""?bullet.Dam:1)
         *(BlackWidow?1.1:1)
         *(LivingAnatomy?1.05:1)
@@ -197,7 +197,7 @@ function calc_common(gun, bullet){
                 *(Atomic?1.25:1)
                 *(AintLikeThatNow?1.2:1)
                 *(Rushingwater?1.5:1)
-                *(!UnMel&&FastShot?1.2:1)
+                *(!UnMel&&!gun.Type.includes('Explosive')&&FastShot?1.2:1)
                 *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
         }
     }
@@ -208,30 +208,45 @@ function calc_common(gun, bullet){
 
     //Appling hits per second
     fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
-    return fin_dam;
+
+    //Sorting
+    let Name;
+    let Bullet;
+    let DPS;
+    let Speed;
+    let dps_single = [Name, Bullet, DPS, Speed];
+    dps_single.Name = gun.Name;
+    if(gun.ammo != ""){dps_single.Bullet = bullet.Name;}
+    else{dps_single.Bullet = ''}
+    dps_single.DPS = fin_dam;
+    dps_single.Speed = AttSpeed;
+    dpslist.push(dps_single);
+    return dpslist;
 }
 
 function calc(){
+    dpslist = [];
     document.getElementById('table').innerHTML = '';
     for (const gun of window.list){ 
         for (const bullet of window.ammo){ 
             if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
-                let line = document.createElement("tr");
-                document.getElementById('table').appendChild(line);
-                line.appendChild(document.createElement("td")).textContent = gun.Name;
-                line.appendChild(document.createElement("td")).textContent = bullet.Name;
-                fin_dam = calc_common(gun, bullet);
-                line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
+                calc_common(gun, bullet);
             }
         }
         if(gun.ammo.trim() == ""){
-            let line = document.createElement("tr");
-            document.getElementById('table').appendChild(line);
-            line.appendChild(document.createElement("td")).textContent = gun.Name;
-            line.appendChild(document.createElement("td"));
-            fin_dam = calc_common(gun);
-            line.appendChild(document.createElement("td")).textContent = Math.round(fin_dam);
+            calc_common(gun);
         }
+    }
+    dpslist.sort(function(a, b){
+        return b["DPS"] - a["DPS"];
+    });
+    for (const element of dpslist){
+        let line = document.createElement("tr");
+        document.getElementById('table').appendChild(line);
+        line.appendChild(document.createElement("td")).textContent = element.Name;
+        line.appendChild(document.createElement("td")).textContent = element.Bullet;
+        line.appendChild(document.createElement("td")).textContent = Math.round(element.DPS);
+        line.appendChild(document.createElement("td")).textContent = Math.round(element.Speed);
     }
 }
 calc();

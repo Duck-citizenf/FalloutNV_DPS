@@ -2338,7 +2338,7 @@ window.list = [
     "CritDot": null,
     "AP cost": 24,
     "ammo": "",
-    "Type": "Throwing"
+    "Type": "Throwing, Explosive"
   },
   {
     "Name": "Throwing hatchet",
