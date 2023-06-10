@@ -5,12 +5,12 @@ arrayinputs.map(w => w.addEventListener('change', calc));
 let dpslist = [];
 
 function calc_common(gun, bullet){
-    let enemyDR = 1;
     let playerLuck = Number(document.getElementById('Luck').value);
     let playerStr = Number(document.getElementById('Strength').value);
     let playerAgi = Number(document.getElementById('Agility').value);
     let playerSkill = 100;
     let enemyDT = Number(document.getElementById('DT').value);
+    let enemyDR = Number(document.getElementById('DR').value);
     let BlackWidow = document.getElementById("Black Widow").checked; //10% dam humanoids
     let Grunt = document.getElementById("Grunt").checked; //25% dam grunt type bonus
     let Cowboy = document.getElementById("Cowboy").checked; //25% dam cowboy type bonus
