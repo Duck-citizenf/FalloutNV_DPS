@@ -193,7 +193,7 @@ function calc_common(gun, bullet){
         if(!gun.Type.includes('Auto')){
             AttSpeed = AttSpeed
                 *(UnMel&&Slayer?1.3:1)
-                *(UnMel&&MeleeHacker?1.1:1)
+                *(gun.Type.includes('Melee')&&MeleeHacker?1.1:1)
                 *(Atomic?1.25:1)
                 *(AintLikeThatNow?1.2:1)
                 *(Rushingwater?1.5:1)
@@ -207,7 +207,7 @@ function calc_common(gun, bullet){
     }
 
     //Appling hits per second
-    fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
+    fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed*(gun.Name.includes('Big Boomer')||gun.Name.includes('Sawed-off shotgun')?2:1);
 
     //Sorting
     let Name;

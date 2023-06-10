@@ -14,7 +14,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 26,
     "ammo": ".357 Magnum round",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 6
   },
   {
     "Name": ".44 Magnum revolver",
@@ -31,7 +32,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": ".44 Magnum round",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 6
   },
   {
     "Name": ".45 Auto pistol",
@@ -48,7 +50,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": ".45 Auto",
-    "Type": "Grunt, Professional"
+    "Type": "Grunt, Professional",
+    "ClipSize": 7
   },
   {
     "Name": "10mm pistol",
@@ -65,7 +68,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": "10mm round",
-    "Type": "Professional"
+    "Type": "Professional",
+    "ClipSize": 12
   },
   {
     "Name": "12.7mm pistol",
@@ -82,7 +86,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": "12.7mm round",
-    "Type": "Professional"
+    "Type": "Professional",
+    "ClipSize": 7
   },
   {
     "Name": "5.56mm pistol",
@@ -99,7 +104,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 21,
     "ammo": "5.56mm round",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 5
   },
   {
     "Name": "9mm pistol",
@@ -116,7 +122,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": "9mm round",
-    "Type": "Grunt, Professional"
+    "Type": "Grunt, Professional",
+    "ClipSize": 13
   },
   {
     "Name": "A Light Shining in Darkness",
@@ -133,7 +140,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": ".45 Auto",
-    "Type": "Grunt, Professional"
+    "Type": "Grunt, Professional",
+    "ClipSize": 6
   },
   {
     "Name": "Hunting revolver",
@@ -150,7 +158,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 31,
     "ammo": ".45-70 Gov't",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 5
   },
   {
     "Name": "Li'l Devil",
@@ -167,7 +176,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": "12.7mm round",
-    "Type": "Professional"
+    "Type": "Professional",
+    "ClipSize": 7
   },
   {
     "Name": "Lucky",
@@ -184,7 +194,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": ".357 Magnum round",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 6
   },
   {
     "Name": "Maria",
@@ -201,7 +212,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": "9mm round",
-    "Type": "Grunt, Professional"
+    "Type": "Grunt, Professional",
+    "ClipSize": 13
   },
   {
     "Name": "Mysterious Magnum",
@@ -218,7 +230,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 22,
     "ammo": ".44 Magnum round",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 6
   },
   {
     "Name": "Police pistol",
@@ -235,7 +248,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 19,
     "ammo": ".357 Magnum round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 6
   },
   {
     "Name": "Ranger Sequoia",
@@ -252,7 +266,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": ".45-70 Gov't",
-    "Type": "Cowboy, Professional"
+    "Type": "Cowboy, Professional",
+    "ClipSize": 5
   },
   {
     "Name": "Silenced .22 pistol",
@@ -269,7 +284,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": ".22LR round",
-    "Type": "Professional"
+    "Type": "Professional",
+    "ClipSize": 16
   },
   {
     "Name": "That Gun",
@@ -286,7 +302,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 19,
     "ammo": "5.56mm round",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 5
   },
   {
     "Name": "Weathered 10mm pistol",
@@ -303,7 +320,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": "10mm round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 12
   },
   {
     "Name": "Abilene Kid LE BB gun",
@@ -320,7 +338,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 28,
     "ammo": "BBs",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 100
   },
   {
     "Name": "All-American",
@@ -337,7 +356,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 13,
     "ammo": "5.56mm round",
-    "Type": "Grunt"
+    "Type": "Grunt",
+    "ClipSize": 24
   },
   {
     "Name": "Anti-Materiel Rifle",
@@ -354,7 +374,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 55,
     "ammo": ".50 MG",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 8
   },
   {
     "Name": "Assault Carbine",
@@ -371,7 +392,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "5mm round",
-    "Type": "Grunt, Auto"
+    "Type": "Grunt, Auto",
+    "ClipSize": 24
   },
   {
     "Name": "Automatic rifle",
@@ -388,7 +410,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": ".308 round",
-    "Type": "Auto"
+    "Type": "Auto",
+    "ClipSize": 20
   },
   {
     "Name": "BB gun",
@@ -405,7 +428,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 28,
     "ammo": "BBs",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 100
   },
   {
     "Name": "Battle rifle",
@@ -422,7 +446,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 8
   },
   {
     "Name": "Bozar",
@@ -439,7 +464,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 18,
     "ammo": "5.56mm round",
-    "Type": "Auto"
+    "Type": "Auto",
+    "ClipSize": 30
   },
   {
     "Name": "Brush gun",
@@ -456,7 +482,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 33,
     "ammo": ".45-70 Gov't",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 6
   },
   {
     "Name": "Christine's CoS silencer rifle",
@@ -473,7 +500,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 38,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 5
   },
   {
     "Name": "Cowboy repeater",
@@ -490,7 +518,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 27,
     "ammo": ".357 Magnum round",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 7
   },
   {
     "Name": "Gobi Campaign scout rifle",
@@ -507,7 +536,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 24,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 6
   },
   {
     "Name": "Hunting rifle",
@@ -524,7 +554,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 40,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 5
   },
   {
     "Name": "La Longue Carabine",
@@ -541,7 +572,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 24,
     "ammo": ".357 Magnum round",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 11
   },
   {
     "Name": "Light machine gun",
@@ -558,7 +590,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 18,
     "ammo": "5.56mm round",
-    "Type": "Grunt, Auto"
+    "Type": "Grunt, Auto",
+    "ClipSize": 90
   },
   {
     "Name": "Marksman carbine",
@@ -575,7 +608,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 14,
     "ammo": "5.56mm round",
-    "Type": "Grunt"
+    "Type": "Grunt",
+    "ClipSize": 20
   },
   {
     "Name": "Medicine Stick",
@@ -592,7 +626,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 31,
     "ammo": ".45-70 Gov't",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 8
   },
   {
     "Name": "Paciencia",
@@ -609,7 +644,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 3
   },
   {
     "Name": "Ratslayer",
@@ -626,7 +662,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 33,
     "ammo": "5.56mm round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 8
   },
   {
     "Name": "Service Rifle",
@@ -643,7 +680,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": "5.56mm round",
-    "Type": "Grunt"
+    "Type": "Grunt",
+    "ClipSize": 20
   },
   {
     "Name": "Sniper rifle",
@@ -660,7 +698,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 27,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 5
   },
   {
     "Name": "Survivalist's Rifle",
@@ -677,7 +716,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "12.7mm round",
-    "Type": "Grunt"
+    "Type": "Grunt",
+    "ClipSize": 10
   },
   {
     "Name": "This Machine",
@@ -694,7 +734,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 22,
     "ammo": ".308 round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 8
   },
   {
     "Name": "Trail carbine",
@@ -711,7 +752,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 29,
     "ammo": ".44 Magnum round",
-    "Type": "Cowboy"
+    "Type": "Cowboy",
+    "ClipSize": 8
   },
   {
     "Name": "Varmint Rifle",
@@ -728,7 +770,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "5.56mm round",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 5
   },
   {
     "Name": ".45 Auto submachine gun",
@@ -745,7 +788,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 19,
     "ammo": ".45 Auto",
-    "Type": "Grunt, Professional, Auto"
+    "Type": "Grunt, Professional, Auto",
+    "ClipSize": 30
   },
   {
     "Name": "10mm submachine gun",
@@ -762,7 +806,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 22,
     "ammo": "10mm round",
-    "Type": "Professional, Auto"
+    "Type": "Professional, Auto",
+    "ClipSize": 30
   },
   {
     "Name": "12.7mm submachine gun",
@@ -779,7 +824,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 24,
     "ammo": "12.7mm round",
-    "Type": "Professional, Auto"
+    "Type": "Professional, Auto",
+    "ClipSize": 21
   },
   {
     "Name": "9mm submachine gun",
@@ -796,7 +842,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "9mm round",
-    "Type": "Grunt, Professional, Auto"
+    "Type": "Grunt, Professional, Auto",
+    "ClipSize": 30
   },
   {
     "Name": "H&H Tools nail gun",
@@ -813,7 +860,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Nails",
-    "Type": "Professional, Auto"
+    "Type": "Professional, Auto",
+    "ClipSize": 90
   },
   {
     "Name": "Silenced .22 SMG",
@@ -830,7 +878,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 19,
     "ammo": ".22LR round",
-    "Type": "Professional, Auto"
+    "Type": "Professional, Auto",
+    "ClipSize": 180
   },
   {
     "Name": "Sleepytyme",
@@ -847,7 +896,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 22,
     "ammo": "10mm round",
-    "Type": "Professional, Auto"
+    "Type": "Professional, Auto",
+    "ClipSize": 40
   },
   {
     "Name": "Vance's 9mm submachine gun",
@@ -864,11 +914,12 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "9mm round",
-    "Type": "Grunt, Professional, Auto"
+    "Type": "Grunt, Professional, Auto",
+    "ClipSize": 60
   },
   {
     "Name": "Big Boomer",
-    "Damage": 120,
+    "Damage": 60,
     "Exp": 0,
     "dot": null,
     "robot": null,
@@ -881,7 +932,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "12 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Caravan shotgun",
@@ -898,7 +950,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "20 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun",
+    "ClipSize": 2
   },
   {
     "Name": "Dinner Bell",
@@ -915,7 +968,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 28,
     "ammo": "12 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun",
+    "ClipSize": 5
   },
   {
     "Name": "Hunting shotgun",
@@ -932,7 +986,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 28,
     "ammo": "12 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun",
+    "ClipSize": 5
   },
   {
     "Name": "Lever-action shotgun",
@@ -949,7 +1004,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": "20 gauge shotgun shell",
-    "Type": "Cowboy, Shotgun"
+    "Type": "Cowboy, Shotgun",
+    "ClipSize": 5
   },
   {
     "Name": "Riot shotgun",
@@ -966,11 +1022,12 @@ window.list = [
     "CritDot": null,
     "AP cost": 17,
     "ammo": "12 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun",
+    "ClipSize": 12
   },
   {
     "Name": "Sawed-off shotgun",
-    "Damage": 100,
+    "Damage": 50,
     "Exp": 0,
     "dot": null,
     "robot": null,
@@ -983,7 +1040,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 37,
     "ammo": "12 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Single shotgun",
@@ -1000,7 +1058,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 45,
     "ammo": "20 gauge shotgun shell",
-    "Type": "Shotgun"
+    "Type": "Shotgun, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Sturdy caravan shotgun",
@@ -1017,7 +1076,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 27,
     "ammo": "20 gauge shotgun shell",
-    "Type": ""
+    "Type": "",
+    "ClipSize": 2
   },
   {
     "Name": "Arc welder",
@@ -1034,7 +1094,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Electron charge pack",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 30
   },
   {
     "Name": "CZ57 Avenger",
@@ -1051,7 +1112,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": "5mm round",
-    "Type": "Auto"
+    "Type": "Auto",
+    "ClipSize": 120
   },
   {
     "Name": "Cleansing Flame",
@@ -1068,7 +1130,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 55,
     "ammo": "Flamer fuel",
-    "Type": "Auto, Pyro, Energy"
+    "Type": "Auto, Pyro, Energy",
+    "ClipSize": 100
   },
   {
     "Name": "Elijah's jury-rigged Tesla cannon",
@@ -1085,7 +1148,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 37,
     "ammo": "Electron charge pack",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 6
   },
   {
     "Name": "FIDO",
@@ -1102,7 +1166,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 28,
     "ammo": ".44 Magnum round",
-    "Type": "Auto, Pyro"
+    "Type": "Auto, Pyro",
+    "ClipSize": 50
   },
   {
     "Name": "Flamer",
@@ -1119,7 +1184,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 50,
     "ammo": "Flamer fuel",
-    "Type": "Auto, Energy"
+    "Type": "Auto, Energy",
+    "ClipSize": 60
   },
   {
     "Name": "Gatling laser",
@@ -1136,7 +1202,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Electron charge pack",
-    "Type": "Laser, Auto"
+    "Type": "Laser, Auto",
+    "ClipSize": 240
   },
   {
     "Name": "Heavy incinerator",
@@ -1153,7 +1220,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 50,
     "ammo": "Flamer fuel",
-    "Type": "Auto, Pyro, Energy"
+    "Type": "Auto, Pyro, Energy",
+    "ClipSize": 24
   },
   {
     "Name": "Incinerator",
@@ -1170,7 +1238,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 50,
     "ammo": "Flamer fuel",
-    "Type": "Auto, Pyro, Energy"
+    "Type": "Auto, Pyro, Energy",
+    "ClipSize": 30
   },
   {
     "Name": "K9000 cyberdog gun",
@@ -1187,7 +1256,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 27,
     "ammo": ".357 Magnum round",
-    "Type": "Auto"
+    "Type": "Auto",
+    "ClipSize": 50
   },
   {
     "Name": "Minigun",
@@ -1204,7 +1274,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "5mm round",
-    "Type": "Auto"
+    "Type": "Auto",
+    "ClipSize": 240
   },
   {
     "Name": "Plasma caster",
@@ -1221,7 +1292,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 10
   },
   {
     "Name": "Shoulder mounted machine gun",
@@ -1238,7 +1310,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "10mm round",
-    "Type": "Auto"
+    "Type": "Auto",
+    "ClipSize": 60
   },
   {
     "Name": "Sprtel-Wood 9700",
@@ -1255,7 +1328,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Electron charge pack",
-    "Type": "Laser, Auto"
+    "Type": "Laser, Auto",
+    "ClipSize": 90
   },
   {
     "Name": "Tesla Cannon",
@@ -1272,7 +1346,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 37,
     "ammo": "Electron charge pack",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 4
   },
   {
     "Name": "Tesla-Beaton prototype",
@@ -1289,7 +1364,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 37,
     "ammo": "Electron charge pack",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 4
   },
   {
     "Name": "The Smitty Special",
@@ -1306,7 +1382,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Microfusion cell",
-    "Type": "Auto, Energy"
+    "Type": "Auto, Energy",
+    "ClipSize": 20
   },
   {
     "Name": "Alien blaster",
@@ -1323,7 +1400,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Alien power cell",
-    "Type": "Professional, Energy"
+    "Type": "Professional, Energy",
+    "ClipSize": 10
   },
   {
     "Name": "Compliance Regulator",
@@ -1340,7 +1418,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional, Auto"
+    "Type": "Laser, Professional, Auto",
+    "ClipSize": 30
   },
   {
     "Name": "Flare gun",
@@ -1357,7 +1436,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Flamer fuel",
-    "Type": "Pyro, Energy"
+    "Type": "Pyro, Energy",
+    "ClipSize": 1
   },
   {
     "Name": "Laser pistol",
@@ -1374,7 +1454,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 30
   },
   {
     "Name": "MF Hyperbreeder Alpha",
@@ -1391,7 +1472,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Microfusion breeder",
-    "Type": "Laser, Professional, Auto"
+    "Type": "Laser, Professional, Auto",
+    "ClipSize": 10
   },
   {
     "Name": "Missing laser pistol",
@@ -1408,7 +1490,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 15,
     "ammo": "Energy cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 30
   },
   {
     "Name": "Pew Pew",
@@ -1425,7 +1508,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 2
   },
   {
     "Name": "Pulse gun",
@@ -1442,7 +1526,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 5
   },
   {
     "Name": "Recharger pistol",
@@ -1459,7 +1544,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 13,
     "ammo": "Microfusion breeder",
-    "Type": "Professional, Energy"
+    "Type": "Professional, Energy",
+    "ClipSize": 20
   },
   {
     "Name": "Sonic Emitter - Gabriel's Bark",
@@ -1476,7 +1562,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 12
   },
   {
     "Name": "Sonic Emitter - Opera Singer",
@@ -1493,7 +1580,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 24
   },
   {
     "Name": "Sonic Emitter - Revelation",
@@ -1510,7 +1598,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 24
   },
   {
     "Name": "Sonic Emitter - Robo-Scorpion",
@@ -1527,7 +1616,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 8
   },
   {
     "Name": "Sonic Emitter - Tarantula",
@@ -1544,7 +1634,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Energy cell",
-    "Type": "Laser, Professional, Pyro"
+    "Type": "Laser, Professional, Pyro",
+    "ClipSize": 8
   },
   {
     "Name": "AER14 prototype",
@@ -1561,7 +1652,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 12
   },
   {
     "Name": "Elijah's advanced LAER",
@@ -1578,7 +1670,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 32,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 15
   },
   {
     "Name": "Elijah's advanced LAER split",
@@ -1595,7 +1688,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 32,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 15
   },
   {
     "Name": "Gauss Rifle",
@@ -1613,7 +1707,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 40,
     "ammo": "Microfusion cell",
-    "Type": "Energy, OneBull"
+    "Type": "Energy, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Holorifle",
@@ -1630,7 +1725,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 4
   },
   {
     "Name": "LAER",
@@ -1647,7 +1743,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 32,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 20
   },
   {
     "Name": "LAER split",
@@ -1664,7 +1761,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 32,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 20
   },
   {
     "Name": "Laser RCW",
@@ -1681,7 +1779,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Electron charge pack",
-    "Type": "Laser, Professional"
+    "Type": "Laser, Professional",
+    "ClipSize": 60
   },
   {
     "Name": "Laser rifle",
@@ -1698,7 +1797,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 18,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 24
   },
   {
     "Name": "Laser rifle split",
@@ -1715,7 +1815,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 18,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 24
   },
   {
     "Name": "Recharger rifle",
@@ -1732,7 +1833,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 19,
     "ammo": "Microfusion breeder",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 7
   },
   {
     "Name": "Tri-beam laser rifle",
@@ -1749,7 +1851,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 23,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 8
   },
   {
     "Name": "Van Graff laser rifle",
@@ -1766,7 +1869,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 18,
     "ammo": "Microfusion cell",
-    "Type": "Laser"
+    "Type": "Laser",
+    "ClipSize": 24
   },
   {
     "Name": "YCS\\186",
@@ -1784,7 +1888,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 40,
     "ammo": "Microfusion cell",
-    "Type": "Energy, OneBull"
+    "Type": "Energy, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Plasma Defender",
@@ -1801,7 +1906,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 20,
     "ammo": "Energy cell",
-    "Type": "Professional, Energy"
+    "Type": "Professional, Energy",
+    "ClipSize": 16
   },
   {
     "Name": "Plasma pistol",
@@ -1818,7 +1924,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Energy cell",
-    "Type": "Professional, Energy"
+    "Type": "Professional, Energy",
+    "ClipSize": 16
   },
   {
     "Name": "Multiplas rifle",
@@ -1835,7 +1942,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 10
   },
   {
     "Name": "Plasma rifle",
@@ -1852,7 +1960,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 12
   },
   {
     "Name": "Q-35 matter modulator",
@@ -1869,7 +1978,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 28,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 12
   },
   {
     "Name": "Van Graff plasma rifle",
@@ -1886,7 +1996,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 30,
     "ammo": "Microfusion cell",
-    "Type": "Energy"
+    "Type": "Energy",
+    "ClipSize": 12
   },
   {
     "Name": "25mm grenade APW",
@@ -1903,7 +2014,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": "25mm grenade",
-    "Type": "Explosive"
+    "Type": "Explosive",
+    "ClipSize": 6
   },
   {
     "Name": "Annabelle",
@@ -1921,7 +2033,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 47,
     "ammo": "Missile",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Esther",
@@ -1939,7 +2052,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 55,
     "ammo": "Mini nuke",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Fat Man",
@@ -1957,7 +2071,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 65,
     "ammo": "Mini nuke",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Great Bear grenade rifle",
@@ -1975,7 +2090,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 32,
     "ammo": "40mm grenade",
-    "Type": "Grunt, Explosive, OneBull"
+    "Type": "Grunt, Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Grenade launcher",
@@ -1993,7 +2109,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Grunt, Explosive, OneBull"
+    "Type": "Grunt, Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Grenade machinegun",
@@ -2010,7 +2127,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 50,
     "ammo": "25mm grenade",
-    "Type": "Auto, Explosive"
+    "Type": "Auto, Explosive",
+    "ClipSize": 30
   },
   {
     "Name": "Grenade rifle",
@@ -2028,7 +2146,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Mercenary's grenade rifle",
@@ -2046,7 +2165,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Mercy",
@@ -2063,7 +2183,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 50,
     "ammo": "40mm grenade",
-    "Type": "Auto, Explosive"
+    "Type": "Auto, Explosive",
+    "ClipSize": 18
   },
   {
     "Name": "Missile launcher",
@@ -2081,7 +2202,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 55,
     "ammo": "Missile",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Red Glare",
@@ -2098,7 +2220,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 25,
     "ammo": "Rocket",
-    "Type": "Auto, Explosive"
+    "Type": "Auto, Explosive",
+    "ClipSize": 13
   },
   {
     "Name": "Red Victory grenade rifle",
@@ -2116,7 +2239,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 29,
     "ammo": "40mm grenade",
-    "Type": "Explosive, OneBull"
+    "Type": "Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Thump-Thump",
@@ -2134,7 +2258,8 @@ window.list = [
     "CritDot": null,
     "AP cost": 35,
     "ammo": "40mm grenade",
-    "Type": "Grunt, Explosive, OneBull"
+    "Type": "Grunt, Explosive, OneBull",
+    "ClipSize": 1
   },
   {
     "Name": "Dynamite",
