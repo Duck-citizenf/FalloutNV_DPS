@@ -94,9 +94,9 @@ function calc_common(gun, bullet){
         +(TruePoliceStories&&!Comprehension?5:0))
         *gun.Critical
         +(LightTouch?5:0)
-        +(FightthePower?5:0);
-        +(CertifiedTech?25:0);
-        +(gun.Type.includes('Laser')&&LaserCommander?10:0);
+        +(FightthePower?5:0)
+        +(CertifiedTech?25:0)
+        +(gun.Type.includes('Laser')&&LaserCommander?10:0)
         +(LasEn&&SetLasers?4:0)
         +(UnMel&&Ninja?15:0);
 
