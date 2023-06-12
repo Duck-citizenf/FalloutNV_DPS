@@ -132,9 +132,9 @@ function calc_common(gun, bullet){
     }
 
     //Damage+Critical damage(average)
-    let Dam = SumDam*(playerSkill/100)
+    let Dam = (SumDam*(playerSkill/100)
         +(gun.ammo != ""?bullet.exp:0)
-        +Crit*enemyDR;
+        +Crit)*(1-(enemyDR/100));
 
     //Reducing damage with enemy's defence
     let pDT = enemyDT; 
