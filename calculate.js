@@ -187,27 +187,31 @@ function calc_common(gun, bullet){
         *(UnMel&&Purifier?1.5:1);
 
     //Attack speed modifiers
-    let AttSpeed;
-    if(!gun.Type.includes('OneBull')){
-        AttSpeed = gun.Attackspeed;
-        if(!gun.Type.includes('Auto')){
-            AttSpeed = AttSpeed
-                *(UnMel&&Slayer?1.3:1)
-                *(gun.Type.includes('Melee')&&MeleeHacker?1.1:1)
-                *(Atomic?1.25:1)
-                *(AintLikeThatNow?1.2:1)
-                *(Rushingwater?1.5:1)
-                *(!UnMel&&!gun.Type.includes('Explosive')&&FastShot?1.2:1)
-                *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
-        }
+    let AttSpeed = gun.Attackspeed;
+     
+    if(!gun.Type.includes('Auto')){
+        AttSpeed = AttSpeed
+            *(UnMel&&Slayer?1.3:1)
+            *(gun.Type.includes('Melee')&&MeleeHacker?1.1:1)
+            *(Atomic?1.25:1)
+            *(AintLikeThatNow?1.2:1)
+            *(Rushingwater?1.5:1)
+            *(!UnMel&&!gun.Type.includes('Explosive')&&FastShot?1.2:1)
+            *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
     }
-    else{
-        AttSpeed = 1/(gun.Reload/((0.5+playerAgi*0.1)*(RapidReload?1.25:1)));
-        
+    fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
+
+    //Calculating attack speed with reload time
+    if(!gun.Reload === undefined){
+        let ReloadTime = gun.Reload/((0.5+playerAgi*0.1)*(RapidReload?1.25:1)); 
+        let UnloadTime = (1/AttSpeed)*gun.ClipSize;
+        let AttReloadSpeed = 1/(ReloadTime+(UnloadTime/2));
+        fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttReloadSpeed*gun.ClipSize;
     }
 
+
     //Appling hits per second
-    fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed*(gun.Name.includes('Big Boomer')||gun.Name.includes('Sawed-off shotgun')?2:1);
+    
 
     //Sorting
     let Name;
