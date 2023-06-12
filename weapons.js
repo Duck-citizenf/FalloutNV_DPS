@@ -2782,7 +2782,7 @@ window.list = [
   },
   {
     "Name": "Chainsaw",
-    "Damage": 95,
+    "Damage": 9.5,
     "Exp": 0,
     "dot": null,
     "robot": null,
@@ -3156,7 +3156,7 @@ window.list = [
   },
   {
     "Name": "Ripper",
-    "Damage": 60,
+    "Damage": 6,
     "Exp": 0,
     "dot": null,
     "robot": null,
@@ -3224,7 +3224,7 @@ window.list = [
   },
   {
     "Name": "Thermic lance",
-    "Damage": 100,
+    "Damage": 10,
     "Exp": 0,
     "dot": null,
     "robot": null,
@@ -3870,7 +3870,7 @@ window.list = [
   },
   {
     "Name": "Industrial hand",
-    "Damage": 50,
+    "Damage": 5,
     "Exp": 0,
     "dot": null,
     "robot": null,
