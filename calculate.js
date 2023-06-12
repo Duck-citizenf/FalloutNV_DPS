@@ -199,19 +199,17 @@ function calc_common(gun, bullet){
             *(!UnMel&&!gun.Type.includes('Explosive')&&FastShot?1.2:1)
             *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
     }
-    fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
 
     //Calculating attack speed with reload time
-    if(!gun.Reload === undefined){
+    if(!(gun.Reload == undefined)){
         let ReloadTime = gun.Reload/((0.5+playerAgi*0.1)*(RapidReload?1.25:1)); 
         let UnloadTime = (1/AttSpeed)*gun.ClipSize;
         let AttReloadSpeed = 1/(ReloadTime+(UnloadTime/2));
         fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttReloadSpeed*gun.ClipSize;
     }
-
-
-    //Appling hits per second
-    
+    else{
+        fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
+    }    
 
     //Sorting
     let Name;
