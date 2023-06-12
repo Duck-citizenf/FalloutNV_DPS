@@ -73,7 +73,7 @@ window.list = [
     "AP cost": 17,
     "ammo": "10mm round",
     "Type": "Professional",
-    "ClipSize": 12
+    "ClipSize": 16
   },
   {
     "Name": "12.7mm pistol",
@@ -130,7 +130,7 @@ window.list = [
     "AP cost": 17,
     "ammo": "9mm round",
     "Type": "Grunt, Professional",
-    "ClipSize": 13
+    "ClipSize": 20
   },
   {
     "Name": "A Light Shining in Darkness",
@@ -168,7 +168,7 @@ window.list = [
     "AP cost": 31,
     "ammo": ".45-70 Gov't",
     "Type": "Cowboy, Professional",
-    "ClipSize": 5
+    "ClipSize": 6
   },
   {
     "Name": "Li'l Devil",
@@ -339,7 +339,7 @@ window.list = [
     "AP cost": 17,
     "ammo": "10mm round",
     "Type": "",
-    "ClipSize": 12
+    "ClipSize": 16
   },
   {
     "Name": "Abilene Kid LE BB gun",
@@ -415,7 +415,7 @@ window.list = [
     "AP cost": 20,
     "ammo": "5mm round",
     "Type": "Grunt, Auto",
-    "ClipSize": 24
+    "ClipSize": 30
   },
   {
     "Name": "Automatic rifle",
@@ -535,7 +535,7 @@ window.list = [
     "Name": "Cowboy repeater",
     "Damage": 32,
     "Exp": 0,
-    "Reload": 3.5,
+    "Reload": 5.5,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -548,7 +548,7 @@ window.list = [
     "AP cost": 27,
     "ammo": ".357 Magnum round",
     "Type": "Cowboy",
-    "ClipSize": 7
+    "ClipSize": 11
   },
   {
     "Name": "Gobi Campaign scout rifle",
@@ -586,7 +586,7 @@ window.list = [
     "AP cost": 40,
     "ammo": ".308 round",
     "Type": "",
-    "ClipSize": 5
+    "ClipSize": 10
   },
   {
     "Name": "La Longue Carabine",
@@ -624,7 +624,7 @@ window.list = [
     "AP cost": 18,
     "ammo": "5.56mm round",
     "Type": "Grunt, Auto",
-    "ClipSize": 90
+    "ClipSize": 200
   },
   {
     "Name": "Marksman carbine",
@@ -814,7 +814,7 @@ window.list = [
     "AP cost": 35,
     "ammo": "5.56mm round",
     "Type": "",
-    "ClipSize": 5
+    "ClipSize": 8
   },
   {
     "Name": ".45 Auto submachine gun",
@@ -833,7 +833,7 @@ window.list = [
     "AP cost": 19,
     "ammo": ".45 Auto",
     "Type": "Grunt, Professional, Auto",
-    "ClipSize": 30
+    "ClipSize": 50
   },
   {
     "Name": "10mm submachine gun",
@@ -852,7 +852,7 @@ window.list = [
     "AP cost": 22,
     "ammo": "10mm round",
     "Type": "Professional, Auto",
-    "ClipSize": 30
+    "ClipSize": 40
   },
   {
     "Name": "12.7mm submachine gun",
@@ -871,7 +871,7 @@ window.list = [
     "AP cost": 24,
     "ammo": "12.7mm round",
     "Type": "Professional, Auto",
-    "ClipSize": 21
+    "ClipSize": 27
   },
   {
     "Name": "9mm submachine gun",
@@ -890,7 +890,7 @@ window.list = [
     "AP cost": 20,
     "ammo": "9mm round",
     "Type": "Grunt, Professional, Auto",
-    "ClipSize": 30
+    "ClipSize": 60
   },
   {
     "Name": "H&H Tools nail gun",
@@ -928,7 +928,7 @@ window.list = [
     "AP cost": 19,
     "ammo": ".22LR round",
     "Type": "Professional, Auto",
-    "ClipSize": 180
+    "ClipSize": 240
   },
   {
     "Name": "Sleepytyme",
@@ -1029,7 +1029,7 @@ window.list = [
     "Name": "Hunting shotgun",
     "Damage": 70,
     "Exp": 0,
-    "Reload": 2.5,
+    "Reload": 4,
     "dot": null,
     "robot": null,
     "PA": null,
@@ -1042,7 +1042,7 @@ window.list = [
     "AP cost": 28,
     "ammo": "12 gauge shotgun shell",
     "Type": "Shotgun",
-    "ClipSize": 5
+    "ClipSize": 8
   },
   {
     "Name": "Lever-action shotgun",
@@ -1251,7 +1251,7 @@ window.list = [
     "AP cost": 50,
     "ammo": "Flamer fuel",
     "Type": "Auto, Energy",
-    "ClipSize": 60
+    "ClipSize": 120
   },
   {
     "Name": "Gatling laser",
@@ -1384,7 +1384,7 @@ window.list = [
     "AP cost": 30,
     "ammo": "10mm round",
     "Type": "Auto",
-    "ClipSize": 60
+    "ClipSize": 75
   },
   {
     "Name": "Sprtel-Wood 9700",
@@ -1951,7 +1951,7 @@ window.list = [
     "AP cost": 23,
     "ammo": "Microfusion cell",
     "Type": "Laser",
-    "ClipSize": 8
+    "ClipSize": 16
   },
   {
     "Name": "Van Graff laser rifle",
@@ -2122,7 +2122,7 @@ window.list = [
     "AP cost": 25,
     "ammo": "25mm grenade",
     "Type": "Explosive",
-    "ClipSize": 6
+    "ClipSize": 8
   },
   {
     "Name": "Annabelle",
