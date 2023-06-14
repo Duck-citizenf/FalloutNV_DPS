@@ -75,6 +75,7 @@ function calc_common(gun, bullet){
     let Armor87 = document.getElementById("Armor of the 87th Tribe").checked;
     let Eliteriot = document.getElementById("Elite riot gear").checked;
     let SaltUponWound = document.getElementById("Salt-Upon-Wounds' helmet").checked;
+    let NoExp = document.getElementById("NoExp").checked;
 
     //Weapon types: Laser, cowboy, grunt, professional, shotgun, throwing, unarmed, melee, explosive, flame, energy
     let UnMel = gun.Type.includes('Melee')||gun.Type.includes('Unarmed');
@@ -156,7 +157,11 @@ function calc_common(gun, bullet){
     let Unique_Exp = Math.max(RoboScorp+Exp50mg*0.2,RoboScorp+Exp50mg-DT);
 
     //Applying all bonuses
-    let fin_dam = (Dam_adjusted+Unique_Exp+Exp_adjusted*(gun.Type.includes('Explosive')&&DemolitionExpert?1.5:1))
+    let fin_dam = (
+            Dam_adjusted
+            +(Unique_Exp
+            +Exp_adjusted*(gun.Type.includes('Explosive')&&DemolitionExpert?1.5:1))*(NoExp?0:1)
+        )
         *(gun.ammo != ""?bullet.Dam:1)
         *(BlackWidow?1.1:1)
         *(LivingAnatomy?1.05:1)
