@@ -131,11 +131,12 @@ function calc_common(gun, bullet){
     if(gun.ammo != ""){
         SumExp = ((gun.Exp/bullet.proj)/gun.proj);
     }
-    let RoboScorp = (CritChance/100)*gun.CritExp*(1-(enemyDR/100));
-    let Exp50mg = (gun.ammo != ""?bullet.exp:0)*(1-(enemyDR/100));
+    let ConDR = 1-(enemyDR/100)
+    let RoboScorp = (CritChance/100)*gun.CritExp;
+    let Exp50mg = (gun.ammo != ""?bullet.exp:0);
 
     //Damage+Critical damage(average)
-    let Dam = (SumDam*(playerSkill/100)+Crit)*(1-(enemyDR/100));
+    let Dam = SumDam*(playerSkill/100)+Crit;
 
     //Reducing damage with enemy's defence
     let pDT = enemyDT; 
@@ -152,9 +153,9 @@ function calc_common(gun, bullet){
         -(UnMel&&PiercingStrike?15:0);
     pDT = pDT*(gun.Type.includes('Auto')&&UnMel?0:1);
     let DT = Math.max(pDT, 0);
-    let Dam_adjusted = Math.max(Dam*0.2,Dam-DT);
-    let Exp_adjusted = Math.max(SumExp*0.2,SumExp-DT);
-    let Unique_Exp = Math.max(RoboScorp+Exp50mg*0.2,RoboScorp+Exp50mg-DT);
+    let Dam_adjusted = Math.max(Dam*0.2,Dam*(!(gun.Type.includes('Auto')&&UnMel)?ConDR:1)-DT);
+    let Exp_adjusted = Math.max(SumExp*0.2,SumExp*ConDR-DT);
+    let Unique_Exp = Math.max((RoboScorp+Exp50mg)*0.2,(RoboScorp+Exp50mg)*ConDR-DT);
 
     //Applying all bonuses
     let fin_dam = (
