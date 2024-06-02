@@ -3,13 +3,17 @@ arrayinputs = Array.from(inputs);
 arrayinputs.map(w => w.addEventListener('change', calc));
 
 let dpslist = [];
+var DT = [];
+for (var i = 1; i <= 75; i++) {
+    DT.push(i);
+}
 
 function calc_common(gun, bullet){
     let playerLuck = Number(document.getElementById('Luck').value);
     let playerStr = Number(document.getElementById('Strength').value);
     let playerAgi = Number(document.getElementById('Agility').value);
     let playerSkill = 100;
-    let enemyDT = Number(document.getElementById('DT').value);
+    // let enemyDT = Number(document.getElementById('DT').value);
     let enemyDR = Number(document.getElementById('DR').value);
     let BlackWidow = document.getElementById("Black Widow").checked; //10% dam humanoids
     let Grunt = document.getElementById("Grunt").checked; //25% dam grunt type bonus
@@ -139,103 +143,106 @@ function calc_common(gun, bullet){
     let Dam = SumDam*(playerSkill/100)+Crit;
 
     //Reducing damage with enemy's defence
-    let pDT = enemyDT; 
-    if(gun.ammo != ""){
-        if(Math.sign(bullet.DT) == 1){
-            pDT = enemyDT*bullet.DT
+    let array_fin_dam = [];
+    let AttSpeed = 0;
+    for (const enemyDT of DT){
+        let pDT = enemyDT; 
+        if(gun.ammo != ""){
+            if(Math.sign(bullet.DT) == 1){
+                pDT = enemyDT*bullet.DT
+            }
+            else{
+                pDT = enemyDT-bullet.DT
+            }
+        }
+        pDT = pDT
+            -(gun.Type.includes('Shotgun')&&ShotgunSurgeon?10:0)
+            -(UnMel&&PiercingStrike?15:0);
+        pDT = pDT*(gun.Type.includes('Auto')&&UnMel?0:1);
+        let DT = Math.max(pDT, 0);
+        let Dam_adjusted = Math.max(Dam*0.2,Dam*(!(gun.Type.includes('Auto')&&UnMel)?ConDR:1)-DT);
+        let Exp_adjusted = Math.max(SumExp*0.2,SumExp*ConDR-DT);
+        let Unique_Exp = Math.max((RoboScorp+Exp50mg)*0.2,(RoboScorp+Exp50mg)*ConDR-DT);
+
+        //Applying all bonuses
+        let fin_dam = (
+                Dam_adjusted
+                +(Unique_Exp
+                +Exp_adjusted*(gun.Type.includes('Explosive')&&DemolitionExpert?1.5:1))*(NoExp?0:1)
+            )
+            *(gun.ammo != ""?bullet.Dam:1)
+            *(BlackWidow?1.1:1)
+            *(LivingAnatomy?1.05:1)
+            *(Entomologist?1.5:1)
+            *(BloodyMess?1.05:1)
+            *(LordDeath?1.04:1)
+            *(Marked?1.1:1)
+            *(Abominable?1.1:1)
+            *(AnimalControl?1.1:1)
+            *(BugStomper?1.1:1)
+            *(MachineHead?1.06:1)
+            *(MutantMassacrer?1.1:1)
+            *(EyeforEye?1.5:1)
+            *(ThoughtYouDied?1.1:1)
+            *(LonesomeRoad?1.1:1)
+            *(HotBlooded?1.15:1)
+            *(DNAgent?1.1:1)
+            *(DNAvenger?1.3:1)
+            *(ImplantC13?1.1:1)
+            *(SneeringImperialist?1.15:1)
+            *(RoboticsExpert?1.25:1)
+            *(UnMel&&HeavyHanded?1.2:1)
+            *(Psycho?1.25:1)
+            *(Yaoguai?1.1:1)
+            *(gun.Type.includes('Laser')&&LaserCommander?1.15:1)
+            *(gun.Type.includes('Pyro')&&Pyromaniac?1.5:1)
+            *(gun.Type.includes('Cowboy')&&Cowboy?1.25:1)
+            *(gun.Type.includes('Grunt')&&Grunt?1.25:1)
+            *(UnMel&&Purifier?1.5:1);
+
+        if (gun.Name == "Recharger rifle"){
+            let c = 0
+        }
+        //Attack speed modifiers
+        let AttSpeed = gun.Attackspeed;
+        if(!gun.Type.includes('Auto')){
+            AttSpeed = AttSpeed
+                *(UnMel&&Slayer?1.3:1)
+                *(gun.Type.includes('Melee')&&MeleeHacker?1.1:1)
+                *(Atomic?1.25:1)
+                *(AintLikeThatNow?1.2:1)
+                *(Rushingwater?1.5:1)
+                *(!UnMel&&!gun.Type.includes('Explosive')&&FastShot?1.2:1)
+                *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
+        }
+
+        //Calculating attack speed with reload time
+        if(!(gun.Reload == undefined)){
+            let ReloadTime = gun.Reload/((0.5+playerAgi*0.1)*(RapidReload?1.25:1)); 
+            let UnloadTime = (1/AttSpeed)*gun.ClipSize;
+            let AttReloadSpeed = 1/(ReloadTime+(UnloadTime/2));
+            fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttReloadSpeed*gun.ClipSize;
         }
         else{
-            pDT = enemyDT-bullet.DT
+            fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
         }
+        array_fin_dam.push(fin_dam);
     }
-    pDT = pDT
-        -(gun.Type.includes('Shotgun')&&ShotgunSurgeon?10:0)
-        -(UnMel&&PiercingStrike?15:0);
-    pDT = pDT*(gun.Type.includes('Auto')&&UnMel?0:1);
-    let DT = Math.max(pDT, 0);
-    let Dam_adjusted = Math.max(Dam*0.2,Dam*(!(gun.Type.includes('Auto')&&UnMel)?ConDR:1)-DT);
-    let Exp_adjusted = Math.max(SumExp*0.2,SumExp*ConDR-DT);
-    let Unique_Exp = Math.max((RoboScorp+Exp50mg)*0.2,(RoboScorp+Exp50mg)*ConDR-DT);
-
-    //Applying all bonuses
-    let fin_dam = (
-            Dam_adjusted
-            +(Unique_Exp
-            +Exp_adjusted*(gun.Type.includes('Explosive')&&DemolitionExpert?1.5:1))*(NoExp?0:1)
-        )
-        *(gun.ammo != ""?bullet.Dam:1)
-        *(BlackWidow?1.1:1)
-        *(LivingAnatomy?1.05:1)
-        *(Entomologist?1.5:1)
-        *(BloodyMess?1.05:1)
-        *(LordDeath?1.04:1)
-        *(Marked?1.1:1)
-        *(Abominable?1.1:1)
-        *(AnimalControl?1.1:1)
-        *(BugStomper?1.1:1)
-        *(MachineHead?1.06:1)
-        *(MutantMassacrer?1.1:1)
-        *(EyeforEye?1.5:1)
-        *(ThoughtYouDied?1.1:1)
-        *(LonesomeRoad?1.1:1)
-        *(HotBlooded?1.15:1)
-        *(DNAgent?1.1:1)
-        *(DNAvenger?1.3:1)
-        *(ImplantC13?1.1:1)
-        *(SneeringImperialist?1.15:1)
-        *(RoboticsExpert?1.25:1)
-        *(UnMel&&HeavyHanded?1.2:1)
-        *(Psycho?1.25:1)
-        *(Yaoguai?1.1:1)
-        *(gun.Type.includes('Laser')&&LaserCommander?1.15:1)
-        *(gun.Type.includes('Pyro')&&Pyromaniac?1.5:1)
-        *(gun.Type.includes('Cowboy')&&Cowboy?1.25:1)
-        *(gun.Type.includes('Grunt')&&Grunt?1.25:1)
-        *(UnMel&&Purifier?1.5:1);
-
-    //Attack speed modifiers
-    let AttSpeed = gun.Attackspeed;
-     
-    if(!gun.Type.includes('Auto')){
-        AttSpeed = AttSpeed
-            *(UnMel&&Slayer?1.3:1)
-            *(gun.Type.includes('Melee')&&MeleeHacker?1.1:1)
-            *(Atomic?1.25:1)
-            *(AintLikeThatNow?1.2:1)
-            *(Rushingwater?1.5:1)
-            *(!UnMel&&!gun.Type.includes('Explosive')&&FastShot?1.2:1)
-            *(gun.Type.includes('Throwing')&&LooseCannon?1.3:1)
-    }
-
-    //Calculating attack speed with reload time
-    if(!(gun.Reload == undefined)){
-        let ReloadTime = gun.Reload/((0.5+playerAgi*0.1)*(RapidReload?1.25:1)); 
-        let UnloadTime = (1/AttSpeed)*gun.ClipSize;
-        let AttReloadSpeed = 1/(ReloadTime+(UnloadTime/2));
-        fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttReloadSpeed*gun.ClipSize;
-    }
-    else{
-        fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
-    }    
-
     //Sorting
-    let Name;
-    let Bullet;
-    let DPS;
-    let Speed;
-    let dps_single = [Name, Bullet, DPS, Speed];
+    let dps_single = [];
     dps_single.Name = gun.Name;
     if(gun.ammo != ""){dps_single.Bullet = bullet.Name;}
     else{dps_single.Bullet = ''}
-    dps_single.DPS = fin_dam;
+    dps_single.DPS = array_fin_dam;
     dps_single.Speed = AttSpeed;
     dpslist.push(dps_single);
     return dpslist;
 }
 
+
 function calc(){
     dpslist = [];
-    document.getElementById('table').innerHTML = '';
+    // document.getElementById('table').innerHTML = '';
     for (const gun of window.list){ 
         for (const bullet of window.ammo){ 
             if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
@@ -246,17 +253,57 @@ function calc(){
             calc_common(gun);
         }
     }
-    dpslist.sort(function(a, b){
-        return b["DPS"] - a["DPS"];
-    });
+    // dpslist.sort(function(a, b){
+    //     return b["DPS"] - a["DPS"];
+    // });
+    // for (const element of dpslist){
+    //     let line = document.createElement("tr");
+    //     document.getElementById('table').appendChild(line);
+    //     line.appendChild(document.createElement("td")).textContent = element.Name;
+    //     line.appendChild(document.createElement("td")).textContent = element.Bullet;
+    //     line.appendChild(document.createElement("td")).textContent = Math.round(element.DPS*100)/100;
+    //     line.appendChild(document.createElement("td")).textContent = Math.round(element.Speed*100)/100;
+    // }
+    //Create datasets
+    let datasets_full = []
     for (const element of dpslist){
-        let line = document.createElement("tr");
-        document.getElementById('table').appendChild(line);
-        line.appendChild(document.createElement("td")).textContent = element.Name;
-        line.appendChild(document.createElement("td")).textContent = element.Bullet;
-        line.appendChild(document.createElement("td")).textContent = Math.round(element.DPS*100)/100;
-        line.appendChild(document.createElement("td")).textContent = Math.round(element.Speed*100)/100;
+        datasets_full.push(
+            {
+                label: element.Name +" "+ element.Bullet,
+                data: element.DPS,
+                borderWidth: 1,
+            }
+        )
     }
-}
-calc();
 
+    //Create graph
+    document.getElementById('myChart').remove();
+    let canvas = document.createElement("canvas");
+    canvas.id = 'myChart';
+    document.getElementById('ChartHolder').append(canvas);
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: DT,
+            datasets: datasets_full
+        },
+        options: {
+            scales: {
+                y: {
+                  beginAtZero: true
+                }
+            }
+        }
+    });
+}
+
+const options = {
+    plugins: {
+        colors: {
+            forceOverride: true
+        }
+    }
+};
+
+calc();
