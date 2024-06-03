@@ -4,9 +4,6 @@ arrayinputs.map(w => w.addEventListener('change', calc));
 
 let dpslist = [];
 var DT = [];
-for (var i = 1; i <= 75; i++) {
-    DT.push(i);
-}
 
 function calc_common(gun, bullet){
     let playerLuck = Number(document.getElementById('Luck').value);
@@ -15,6 +12,7 @@ function calc_common(gun, bullet){
     let playerSkill = 100;
     // let enemyDT = Number(document.getElementById('DT').value);
     let enemyDR = Number(document.getElementById('DR').value);
+    let bottomDPS = Number(document.getElementById('DPS').value);
     let BlackWidow = document.getElementById("Black Widow").checked; //10% dam humanoids
     let Grunt = document.getElementById("Grunt").checked; //25% dam grunt type bonus
     let Cowboy = document.getElementById("Cowboy").checked; //25% dam cowboy type bonus
@@ -200,9 +198,6 @@ function calc_common(gun, bullet){
             *(gun.Type.includes('Grunt')&&Grunt?1.25:1)
             *(UnMel&&Purifier?1.5:1);
 
-        if (gun.Name == "Recharger rifle"){
-            let c = 0
-        }
         //Attack speed modifiers
         let AttSpeed = gun.Attackspeed;
         if(!gun.Type.includes('Auto')){
@@ -226,7 +221,7 @@ function calc_common(gun, bullet){
         else{
             fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
         }
-        if (fin_dam > 540){
+        if (fin_dam > bottomDPS){
             array_fin_dam.push(fin_dam);
         }
         else{
@@ -246,7 +241,12 @@ function calc_common(gun, bullet){
 
 
 function calc(){
+    let maxDT = Number(document.getElementById('DT').value)<1?1:Number(document.getElementById('DT').value);
     dpslist = [];
+    DT = [];
+    for (var i = 0; i <= maxDT; i++) {
+        DT.push(i);
+    }
     // document.getElementById('table').innerHTML = '';
     for (const gun of window.list){ 
         for (const bullet of window.ammo){ 
