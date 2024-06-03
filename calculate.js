@@ -226,7 +226,12 @@ function calc_common(gun, bullet){
         else{
             fin_dam = fin_dam*gun.proj*(gun.ammo != ""?bullet.proj:1)*AttSpeed;
         }
-        array_fin_dam.push(fin_dam);
+        if (fin_dam > 540){
+            array_fin_dam.push(fin_dam);
+        }
+        else{
+            array_fin_dam.push(null);
+        }
     }
     //Sorting
     let dps_single = [];
@@ -269,41 +274,52 @@ function calc(){
     for (const element of dpslist){
         datasets_full.push(
             {
-                label: element.Name +" "+ element.Bullet,
+                name: element.Name +" "+ element.Bullet,
                 data: element.DPS,
-                borderWidth: 1,
+                lineWidth: 0.5,
             }
         )
     }
 
     //Create graph
-    document.getElementById('myChart').remove();
-    let canvas = document.createElement("canvas");
-    canvas.id = 'myChart';
-    document.getElementById('ChartHolder').append(canvas);
-    const ctx = document.getElementById('myChart');
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: DT,
-            datasets: datasets_full
+    Highcharts.chart('ChartHolder', {
+        chart: {
+            height: 900,
         },
-        options: {
-            scales: {
-                y: {
-                  beginAtZero: true
-                }
+        yAxis: {
+        },
+    
+        xAxis: {
+        },
+        tooltip: {
+            valueDecimals: 2
+        },
+    
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                },
+                pointStart: 0
             }
+        },
+        legend:{ enabled:false },
+        series: datasets_full,
+    
+        responsive: {
+            rules: [{
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
         }
-    });
+    
+    });    
 }
 
-const options = {
-    plugins: {
-        colors: {
-            forceOverride: true
-        }
-    }
-};
 
 calc();
