@@ -241,10 +241,11 @@ function calc_common(gun, bullet){
 
 
 function calc(){
-    let maxDT = Number(document.getElementById('DT').value)<1?1:Number(document.getElementById('DT').value);
+    let maxDT = Number(document.getElementById('maxDT').value)<1?1:Number(document.getElementById('maxDT').value);
+    let minDT = Number(document.getElementById('minDT').value);
     dpslist = [];
     DT = [];
-    for (var i = 0; i <= maxDT; i++) {
+    for (var i = 0; i <= 75; i++) {
         DT.push(i);
     }
     // document.getElementById('table').innerHTML = '';
@@ -290,6 +291,8 @@ function calc(){
         },
     
         xAxis: {
+            min: minDT,
+            max: maxDT
         },
         tooltip: {
             valueDecimals: 2
