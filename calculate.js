@@ -243,20 +243,44 @@ function calc_common(gun, bullet){
 function calc(){
     let maxDT = Number(document.getElementById('maxDT').value)<1?1:Number(document.getElementById('maxDT').value);
     let minDT = Number(document.getElementById('minDT').value);
+
+    let NoMelee = document.getElementById("Melee").checked;
+    let NoGrunt = document.getElementById("GruntGuns").checked;
+    let NoCowboy = document.getElementById("CowboyGuns").checked;
+    let NoExplosive = document.getElementById("Explosive").checked;
+    let NoAuto = document.getElementById("Auto").checked;
+    let NoEnergy = document.getElementById("Energy").checked;
+    let NoShotgun = document.getElementById("Shotgun").checked;
+    let NoPlain = document.getElementById("Plain").checked;
+
     dpslist = [];
     DT = [];
     for (var i = 0; i <= 75; i++) {
         DT.push(i);
     }
     // document.getElementById('table').innerHTML = '';
-    for (const gun of window.list){ 
-        for (const bullet of window.ammo){ 
-            if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
-                calc_common(gun, bullet);
-            }
+    for (const gun of window.list){
+        if  (
+                (gun.Type.includes('Melee') || gun.Type.includes('Unarmed') && NoMelee) ||
+                (gun.Type.includes('Grunt') && NoGrunt) ||
+                (gun.Type.includes('Cowboy') && NoCowboy) ||
+                (gun.Type.includes('Explosive') && NoExplosive) ||
+                (gun.Type.includes('Auto') && NoAuto) ||
+                (gun.Type.includes('Energy') || gun.Type.includes('Laser') && NoEnergy) ||
+                (gun.Type.includes('Shotgun') && NoShotgun) ||
+                (gun.Type == "" || gun.Type == "Professional" && NoPlain)
+            ){
+            continue;
         }
-        if(gun.ammo.trim() == ""){
-            calc_common(gun);
+        else{
+            for (const bullet of window.ammo){ 
+                if(gun.ammo.trim().toLowerCase() == bullet.class.trim().toLowerCase()){
+                    calc_common(gun, bullet);
+                }
+            }
+            if(gun.ammo.trim() == ""){
+                calc_common(gun);
+            }
         }
     }
     // dpslist.sort(function(a, b){
